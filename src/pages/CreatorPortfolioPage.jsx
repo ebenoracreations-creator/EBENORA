@@ -33,7 +33,7 @@ export function CreatorPortfolioPage() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#0C0C0C] text-[#D7E2EA] overflow-x-clip select-none font-['Kanit',sans-serif]">
+    <div className="w-full min-h-screen bg-[#0C0C0C] text-[#D7E2EA] relative select-none font-['Kanit',sans-serif]">
       {/* 3D Page Turn Flip Animation on Navbar Click */}
       <PageTurnOverlay isFlipping={isFlipping} />
 

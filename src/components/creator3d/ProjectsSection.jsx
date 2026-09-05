@@ -118,8 +118,8 @@ const ALL_PROJECTS = [
 function Card({ project, index, totalCards, scrollYProgress }) {
   const containerRef = useRef(null);
   
-  // Calculate target scale for card stacking effect (original 3D stack animation)
-  const targetScale = 1 - (totalCards - 1 - index) * 0.025;
+  // Calculate target scale for card stacking effect (cards overlap and scale down)
+  const targetScale = 1 - (totalCards - 1 - index) * 0.035;
   const start = index / totalCards;
   const end = 1;
   const scale = useTransform(scrollYProgress, [start, end], [1, targetScale]);
@@ -132,15 +132,18 @@ function Card({ project, index, totalCards, scrollYProgress }) {
   return (
     <div
       ref={containerRef}
-      className="h-[82vh] sm:h-[85vh] flex items-center justify-center sticky top-20 sm:top-24 md:top-28"
+      style={{
+        top: `calc(64px + ${index * 22}px)`,
+        zIndex: index + 1
+      }}
+      className="h-[80vh] sm:h-[84vh] w-full flex items-center justify-center sticky"
     >
       <motion.div
         style={{
-          scale,
-          top: `${index * 20}px`
+          scale
         }}
         onClick={handleOpenSite}
-        className="relative w-full max-w-6xl h-[480px] sm:h-[520px] md:h-[550px] rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-2xl overflow-hidden cursor-pointer group"
+        className="relative w-full max-w-6xl h-[470px] sm:h-[510px] md:h-[540px] rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-[0_20px_60px_rgba(0,0,0,0.95)] overflow-hidden cursor-pointer group"
       >
         {/* Top Header Row */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 w-full shrink-0 pb-3">
@@ -232,7 +235,8 @@ export function ProjectsSection() {
     <section
       id="projects"
       ref={containerRef}
-      className="bg-[#0C0C0C] text-[#D7E2EA] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-10 px-4 sm:px-6 md:px-10 pt-16 pb-32 select-none"
+      style={{ minHeight: showAll ? '780vh' : '380vh' }}
+      className="bg-[#0C0C0C] text-[#D7E2EA] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-10 px-4 sm:px-6 md:px-10 pt-16 pb-28 select-none transition-[min-height] duration-500"
     >
       {/* Heading */}
       <FadeIn delay={0} y={40} className="w-full mb-12 sm:mb-16 md:mb-20 text-center">
@@ -258,7 +262,7 @@ export function ProjectsSection() {
       </div>
 
       {/* View More / View Less Projects Button */}
-      <div className="mt-16 flex justify-center w-full relative z-20">
+      <div className="mt-20 pb-12 flex justify-center w-full relative z-30">
         <button
           onClick={() => {
             setShowAll(!showAll);

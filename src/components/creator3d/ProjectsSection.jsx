@@ -272,11 +272,11 @@ export function ProjectsSection() {
         >
           {showAll ? (
             <>
-              Show Fewer Projects <ChevronUp className="w-4 h-4" />
+              Less Projects <ChevronUp className="w-4 h-4" />
             </>
           ) : (
             <>
-              More Projects + (View All 9) <ChevronDown className="w-4 h-4" />
+              More Projects <ChevronDown className="w-4 h-4" />
             </>
           )}
         </button>

@@ -16,11 +16,11 @@ export function HeroSection({ onNavigate }) {
   return (
     <section className="h-screen w-full flex flex-col justify-between relative overflow-x-clip bg-[#0C0C0C] select-none">
       {/* Ambient Spotlight Glow Behind 3D Character */}
-      <div className="absolute left-1/2 bottom-0 -translate-x-1/2 w-[340px] sm:w-[500px] md:w-[750px] lg:w-[900px] h-[340px] sm:h-[500px] md:h-[750px] bg-[radial-gradient(circle_at_center,rgba(182,0,168,0.3)_0%,rgba(118,33,176,0.15)_45%,transparent_70%)] pointer-events-none z-0 blur-3xl" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[520px] md:w-[750px] lg:w-[900px] h-[340px] sm:h-[520px] md:h-[750px] bg-[radial-gradient(circle_at_center,rgba(182,0,168,0.35)_0%,rgba(118,33,176,0.18)_45%,transparent_70%)] pointer-events-none z-0 blur-3xl" />
 
       {/* Navbar: About -> Projects -> Services -> Contact */}
       <FadeIn delay={0} y={-20} className="w-full z-30">
-        <nav className="w-full flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8">
+        <nav className="w-full flex items-center justify-between px-6 md:px-10 pt-8 sm:pt-6 md:pt-8">
           <button
             onClick={() => handleNav('about')}
             className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 bg-transparent border-none cursor-pointer"
@@ -48,36 +48,37 @@ export function HeroSection({ onNavigate }) {
         </nav>
       </FadeIn>
 
-      {/* Hero Heading Layer 1: Solid Gradient Filled Text & SEO H1 Heading (Behind Character z-0) */}
-      <div className="absolute top-[42%] -translate-y-1/2 left-0 w-full px-4 z-0 pointer-events-none flex justify-center items-center">
+      {/* Hero Heading Layer 1: Solid Gradient Filled Text (Behind Character z-0) */}
+      <div className="absolute top-[38%] sm:top-[40%] md:top-[42%] -translate-y-1/2 left-0 w-full px-4 z-0 pointer-events-none flex justify-center items-center">
         <FadeIn delay={0.15} y={40} className="w-full flex flex-col items-center">
           <h1
             className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap text-center"
-            style={{ fontSize: 'clamp(2.2rem, 10.5vw, 13.5vw)' }}
+            style={{ fontSize: 'clamp(2.5rem, 11vw, 13.5vw)' }}
           >
             hi, i&apos;m ebenora
           </h1>
-          {/* SEO H1 Target Title Tag for Crawlers */}
           <span className="sr-only">
             Creative Digital Studio in Kochi, Kerala — Web Design, Branding, Graphic Design, Video & SEO
           </span>
         </FadeIn>
       </div>
 
-      {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10, Feet at Bottom Edge) */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[360px] sm:w-[480px] md:w-[640px] lg:w-[760px] xl:w-[840px] bottom-0 pointer-events-auto flex justify-center items-end">
-        <FadeIn delay={0.6} y={30} className="w-full flex justify-center items-end">
+      {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10)
+          On mobile: anchored higher (top-[11%]) so head sits right under the navbar and body fills the screen.
+          On desktop: anchored bottom-0 as approved. */}
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[95vw] max-w-[440px] sm:max-w-[520px] md:max-w-[660px] lg:max-w-[780px] xl:max-w-[860px] top-[11%] sm:top-[10%] md:top-auto md:bottom-0 pointer-events-auto flex justify-center items-end">
+        <FadeIn delay={0.4} y={30} className="w-full flex justify-center items-end">
           <Magnet
             strength={4}
             activeTransition="transform 0.2s ease-out"
             inactiveTransition="transform 0.5s ease-out"
             className="w-full flex justify-center items-end cursor-grab active:cursor-grabbing"
           >
-            {/* Mobile Hero Image (Screens < 768px) */}
+            {/* Mobile Hero Image (Screens < 768px) - Enhanced size & clarity */}
             <img
               src="./images/mobile-hero.png"
               alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero"
-              className="w-full h-auto max-h-[80vh] sm:max-h-[84vh] object-contain object-bottom drop-shadow-[0_30px_70px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%] md:hidden"
+              className="w-full h-auto max-h-[75vh] sm:max-h-[82vh] object-contain object-top drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)] filter contrast-[105%] brightness-[105%] md:hidden"
               loading="eager"
             />
             {/* Laptop / Desktop Hero Image (Screens >= 768px) */}
@@ -92,12 +93,12 @@ export function HeroSection({ onNavigate }) {
       </div>
 
       {/* Hero Heading Layer 3: Perfect Pixel-Matched Outline Overlay (In Front of Character z-20) */}
-      <div className="absolute top-[42%] -translate-y-1/2 left-0 w-full px-4 z-20 pointer-events-none flex justify-center items-center">
+      <div className="absolute top-[38%] sm:top-[40%] md:top-[42%] -translate-y-1/2 left-0 w-full px-4 z-20 pointer-events-none flex justify-center items-center">
         <FadeIn delay={0.15} y={40} className="w-full flex justify-center">
           <span
             className="font-black uppercase tracking-tight leading-none whitespace-nowrap text-center block"
             style={{
-              fontSize: 'clamp(2.2rem, 10.5vw, 13.5vw)',
+              fontSize: 'clamp(2.5rem, 11vw, 13.5vw)',
               color: 'transparent',
               WebkitTextStroke: '2px #BBCCD7'
             }}
@@ -108,17 +109,17 @@ export function HeroSection({ onNavigate }) {
       </div>
 
       {/* Bottom Bar (z-30) */}
-      <div className="w-full flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 z-30">
-        <FadeIn delay={0.35} y={20} className="max-w-[200px] sm:max-w-[300px] md:max-w-[380px]">
+      <div className="w-full flex flex-col sm:flex-row justify-between items-center sm:items-end gap-4 pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 z-30">
+        <FadeIn delay={0.35} y={20} className="max-w-[260px] sm:max-w-[300px] md:max-w-[380px] text-center sm:text-left">
           <p
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug"
-            style={{ fontSize: 'clamp(0.7rem, 1.15vw, 1.2rem)' }}
+            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug drop-shadow-md"
+            style={{ fontSize: 'clamp(0.65rem, 1.1vw, 1.15rem)' }}
           >
             We design brands, build powerful websites, create compelling visuals and help businesses grow through digital experiences that perform.
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.5} y={20}>
+        <FadeIn delay={0.5} y={20} className="shrink-0">
           <ContactButton
             onClick={() => handleNav('contact')}
             label="Start a Project →"

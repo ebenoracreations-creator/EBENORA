@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" fill="none">
+  <rect width="600" height="375" fill="#06060C"/>
+  <circle cx="300" cy="180" r="140" fill="url(#purpleGlow)" opacity="0.3"/>
+  <defs>
+    <radialGradient id="purpleGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#7000FF"/>
+      <stop offset="1" stop-color="#7000FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="200" y1="50" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  {/* 3D Question Mark Path */}
+  <path d="M260 120 C260 80, 340 80, 340 130 C340 170, 300 170, 300 210 M300 250 V260" stroke="url(#metal)" stroke-width="32" stroke-linecap="round" fill="none"/>
+  <circle cx="300" cy="270" r="16" fill="#00F0FF"/>
+</svg>

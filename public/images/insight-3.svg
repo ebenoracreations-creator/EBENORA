@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" fill="none">
+  <rect width="600" height="375" fill="#06060C"/>
+  <circle cx="300" cy="180" r="140" fill="url(#cyanGlow)" opacity="0.25"/>
+  <defs>
+    <radialGradient id="cyanGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(140)">
+      <stop stop-color="#00F0FF"/>
+      <stop offset="1" stop-color="#00F0FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  {/* Diagonal Pen Stylus */}
+  <path d="M420 60 L450 90 L220 300 L170 310 L180 260 Z" fill="url(#penGrad)" stroke="#00F0FF" stroke-width="2"/>
+  <defs>
+    <linearGradient id="penGrad" x1="420" y1="60" x2="170" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#94A3B8"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <path d="M100 310 Q200 290 350 320 T500 300" stroke="#FF8A00" stroke-width="4" fill="none"/>
+</svg>

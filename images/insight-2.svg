@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" fill="none">
+  <rect width="600" height="375" fill="#06060C"/>
+  <circle cx="300" cy="180" r="150" fill="url(#goldGlow)" opacity="0.25"/>
+  <defs>
+    <radialGradient id="goldGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 180) rotate(90) scale(150)">
+      <stop stop-color="#FF6B00"/>
+      <stop offset="1" stop-color="#FF6B00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  {/* Isometric Glowing Cubes */}
+  <path d="M300 80 L370 120 L300 160 L230 120 Z" fill="#FF8A00" opacity="0.9"/>
+  <path d="M230 120 L300 160 V240 L230 200 Z" fill="#D97706" opacity="0.8"/>
+  <path d="M370 120 L300 160 V240 L370 200 Z" fill="#B45309" opacity="0.7"/>
+  <path d="M200 180 L250 210 L200 240 L150 210 Z" fill="#7000FF" opacity="0.8"/>
+  <path d="M400 180 L450 210 L400 240 L350 210 Z" fill="#00F0FF" opacity="0.8"/>
+</svg>

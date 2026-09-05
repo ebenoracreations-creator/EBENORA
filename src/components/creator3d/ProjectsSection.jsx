@@ -108,8 +108,8 @@ const PROJECTS = [
 function Card({ project, index, totalCards, scrollYProgress }) {
   const containerRef = useRef(null);
   
-  // Consistent subtle scale for perfectly uniform cards
-  const targetScale = 1 - (totalCards - 1 - index) * 0.012;
+  // Calculate target scale for card stacking effect (original 3D stack)
+  const targetScale = 1 - (totalCards - 1 - index) * 0.03;
   const start = index / totalCards;
   const end = 1;
   const scale = useTransform(scrollYProgress, [start, end], [1, targetScale]);
@@ -122,12 +122,12 @@ function Card({ project, index, totalCards, scrollYProgress }) {
   return (
     <div
       ref={containerRef}
-      className="h-[80vh] flex items-center justify-center sticky top-20 sm:top-24 md:top-28"
+      className="h-[85vh] flex items-center justify-center sticky top-20 sm:top-24 md:top-28"
     >
       <motion.div
         style={{
           scale,
-          top: `${index * 12}px`
+          top: `${index * 24}px`
         }}
         onClick={handleOpenSite}
         className="relative w-full max-w-6xl h-[480px] sm:h-[520px] md:h-[550px] rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-2xl overflow-hidden cursor-pointer group"

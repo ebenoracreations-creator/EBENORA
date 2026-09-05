@@ -48,12 +48,12 @@ export function HeroSection({ onNavigate }) {
         </nav>
       </FadeIn>
 
-      {/* Hero Heading Layer 1: Solid Gradient Filled Text (Behind Character z-0) */}
-      <div className="absolute top-[23%] sm:top-[26%] md:top-[42%] -translate-y-1/2 left-0 w-full px-2 sm:px-4 z-0 pointer-events-none flex justify-center items-center">
+      {/* Hero Heading Layer 1: Solid Gradient Filled Text (Prominent & 100% visible on Mobile z-20, Behind Character on Desktop z-0) */}
+      <div className="absolute top-[13%] sm:top-[14%] md:top-[42%] -translate-y-1/2 left-0 w-full px-4 sm:px-6 md:px-10 z-20 md:z-0 pointer-events-none flex justify-center items-center">
         <FadeIn delay={0.15} y={40} className="w-full flex flex-col items-center">
           <h1
-            className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap text-center"
-            style={{ fontSize: 'clamp(1.4rem, 7.6vw, 13.5vw)' }}
+            className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap text-center drop-shadow-[0_10px_30px_rgba(0,0,0,0.95)]"
+            style={{ fontSize: 'clamp(1.35rem, 6.8vw, 13.5vw)' }}
           >
             hi, i&apos;m ebenora
           </h1>
@@ -64,7 +64,7 @@ export function HeroSection({ onNavigate }) {
       </div>
 
       {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10) */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[380px] sm:max-w-[460px] md:max-w-[640px] lg:max-w-[760px] xl:max-w-[840px] top-[9%] sm:top-[10%] md:top-auto md:bottom-0 pointer-events-auto flex justify-center items-start md:items-end">
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[360px] sm:max-w-[440px] md:max-w-[640px] lg:max-w-[760px] xl:max-w-[840px] top-[19%] sm:top-[20%] md:top-auto md:bottom-0 pointer-events-auto flex justify-center items-start md:items-end">
         <FadeIn delay={0.35} y={30} className="w-full flex justify-center items-start md:items-end">
           <Magnet
             strength={4}
@@ -75,20 +75,20 @@ export function HeroSection({ onNavigate }) {
             <img
               src="./images/hero.png"
               alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero"
-              className="w-full h-auto max-h-[54vh] sm:max-h-[58vh] md:max-h-[82vh] lg:max-h-[86vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
+              className="w-full h-auto max-h-[49vh] sm:max-h-[54vh] md:max-h-[82vh] lg:max-h-[86vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
               loading="eager"
             />
           </Magnet>
         </FadeIn>
       </div>
 
-      {/* Hero Heading Layer 3: Perfect Pixel-Matched Outline Overlay (In Front of Character z-20) */}
-      <div className="absolute top-[23%] sm:top-[26%] md:top-[42%] -translate-y-1/2 left-0 w-full px-2 sm:px-4 z-20 pointer-events-none flex justify-center items-center">
+      {/* Hero Heading Layer 3: Perfect Pixel-Matched Outline Overlay (Desktop Only z-20) */}
+      <div className="hidden md:flex absolute top-[42%] -translate-y-1/2 left-0 w-full px-4 z-20 pointer-events-none justify-center items-center">
         <FadeIn delay={0.15} y={40} className="w-full flex justify-center">
           <span
             className="font-black uppercase tracking-tight leading-none whitespace-nowrap text-center block"
             style={{
-              fontSize: 'clamp(1.4rem, 7.6vw, 13.5vw)',
+              fontSize: 'clamp(1.35rem, 6.8vw, 13.5vw)',
               color: 'transparent',
               WebkitTextStroke: '2px #BBCCD7'
             }}

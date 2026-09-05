@@ -115,11 +115,11 @@ const ALL_PROJECTS = [
   }
 ];
 
-function Card({ project, index, totalCards, scrollYProgress }) {
+function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, onToggleShowAll }) {
   const containerRef = useRef(null);
   
-  // Calculate target scale for card stacking effect (cards overlap and scale down)
-  const targetScale = 1 - (totalCards - 1 - index) * 0.035;
+  // Consistent subtle scale for perfectly uniform cards
+  const targetScale = 1 - (totalCards - 1 - index) * 0.012;
   const start = index / totalCards;
   const end = 1;
   const scale = useTransform(scrollYProgress, [start, end], [1, targetScale]);
@@ -132,90 +132,117 @@ function Card({ project, index, totalCards, scrollYProgress }) {
   return (
     <div
       ref={containerRef}
-      style={{
-        top: `calc(64px + ${index * 22}px)`,
-        zIndex: index + 1
-      }}
-      className="h-[80vh] sm:h-[84vh] w-full flex items-center justify-center sticky"
+      className="h-[80vh] flex items-center justify-center sticky top-20 sm:top-24 md:top-28 w-full"
     >
-      <motion.div
-        style={{
-          scale
-        }}
-        onClick={handleOpenSite}
-        className="relative w-full max-w-6xl h-[470px] sm:h-[510px] md:h-[540px] rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-[0_20px_60px_rgba(0,0,0,0.95)] overflow-hidden cursor-pointer group"
-      >
-        {/* Top Header Row */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 w-full shrink-0 pb-3">
-          <div className="flex items-center gap-4 sm:gap-6">
-            <span
-              className="font-black text-[#D7E2EA] leading-none"
-              style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}
-            >
-              {project.num}
-            </span>
-            <div className="flex flex-col">
-              <span className="text-xs font-light uppercase tracking-widest text-[#BBCCD7]">
-                [{project.category}]
+      <div className="relative w-full max-w-6xl flex justify-center">
+        <motion.div
+          style={{
+            scale,
+            top: `${index * 12}px`
+          }}
+          onClick={handleOpenSite}
+          className="relative w-full h-[480px] sm:h-[520px] md:h-[550px] rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-2xl overflow-hidden cursor-pointer group"
+        >
+          {/* Top Header Row */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 w-full shrink-0 pb-3">
+            <div className="flex items-center gap-4 sm:gap-6">
+              <span
+                className="font-black text-[#D7E2EA] leading-none"
+                style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}
+              >
+                {project.num}
               </span>
-              <h3 className="text-lg sm:text-2xl font-medium uppercase tracking-tight text-[#D7E2EA]">
-                {project.name}
-              </h3>
+              <div className="flex flex-col">
+                <span className="text-xs font-light uppercase tracking-widest text-[#BBCCD7]">
+                  [{project.category}]
+                </span>
+                <h3 className="text-lg sm:text-2xl font-medium uppercase tracking-tight text-[#D7E2EA]">
+                  {project.name}
+                </h3>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <LiveProjectButton
+                label="Live Project"
+                onClick={handleOpenSite}
+              />
+              <button
+                onClick={handleOpenSite}
+                className="px-4 py-2 rounded-full border border-[#D7E2EA]/40 text-xs font-bold text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-black transition-all cursor-pointer"
+              >
+                Open Site ↗
+              </button>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <LiveProjectButton
-              label="Live Project"
-              onClick={handleOpenSite}
-            />
+          {/* Bottom Image Showcase Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-3 w-full flex-1 overflow-hidden items-stretch">
+            {/* Left Column */}
+            <div className="md:col-span-5 flex flex-col gap-3 h-full">
+              <div className="flex-1 w-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative">
+                <img
+                  src={project.col1Img1}
+                  alt={`${project.name} live preview`}
+                  className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500 bg-neutral-950"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex-1 w-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative">
+                <img
+                  src={project.col1Img2}
+                  alt={`${project.name} detail`}
+                  className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500 bg-neutral-950"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="md:col-span-7 h-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative">
+              <img
+                src={project.col2Img}
+                alt={`${project.name} showcase`}
+                className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500 bg-neutral-950"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="px-5 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider shadow-2xl">
+                  Click to Open {project.name} ↗
+                </span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Pill button centered across the bottom border of the last card */}
+        {isLast && (
+          <div
+            style={{
+              top: `calc(100% + ${index * 12}px - 22px)`
+            }}
+            className="absolute left-1/2 -translate-x-1/2 z-40 pointer-events-auto"
+          >
             <button
-              onClick={handleOpenSite}
-              className="px-4 py-2 rounded-full border border-[#D7E2EA]/40 text-xs font-bold text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-black transition-all cursor-pointer"
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleShowAll();
+              }}
+              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border border-[#D7E2EA]/40 bg-[#0C0C0C] text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-black transition-all cursor-pointer shadow-2xl flex items-center gap-2 hover:scale-105 active:scale-95 whitespace-nowrap"
             >
-              Open Site ↗
+              {showAll ? (
+                <>
+                  LESS PROJECTS <ChevronUp className="w-3.5 h-3.5" />
+                </>
+              ) : (
+                <>
+                  MORE PROJECTS <ChevronDown className="w-3.5 h-3.5" />
+                </>
+              )}
             </button>
           </div>
-        </div>
-
-        {/* Bottom Image Showcase Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 w-full flex-1 overflow-hidden items-stretch">
-          {/* Left Column */}
-          <div className="md:col-span-5 flex flex-col gap-3 h-full">
-            <div className="flex-1 w-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative">
-              <img
-                src={project.col1Img1}
-                alt={`${project.name} live preview`}
-                className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500 bg-neutral-950"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex-1 w-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative">
-              <img
-                src={project.col1Img2}
-                alt={`${project.name} detail`}
-                className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500 bg-neutral-950"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="md:col-span-7 h-full rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 relative">
-            <img
-              src={project.col2Img}
-              alt={`${project.name} showcase`}
-              className="w-full h-full object-cover object-top group-hover:scale-103 transition-transform duration-500 bg-neutral-950"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span className="px-5 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider shadow-2xl">
-                Click to Open {project.name} ↗
-              </span>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+        )}
+      </div>
     </div>
   );
 }
@@ -231,12 +258,22 @@ export function ProjectsSection() {
     offset: ['start start', 'end end']
   });
 
+  const handleToggle = () => {
+    if (showAll) {
+      setShowAll(false);
+      const el = document.getElementById('projects');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      setShowAll(true);
+    }
+  };
+
   return (
     <section
       id="projects"
       ref={containerRef}
-      style={{ minHeight: showAll ? '780vh' : '380vh' }}
-      className="bg-[#0C0C0C] text-[#D7E2EA] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-10 px-4 sm:px-6 md:px-10 pt-16 pb-28 select-none transition-[min-height] duration-500"
+      style={{ minHeight: showAll ? '750vh' : '340vh' }}
+      className="bg-[#0C0C0C] text-[#D7E2EA] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-10 px-4 sm:px-6 md:px-10 pt-16 pb-32 select-none transition-[min-height] duration-500"
     >
       {/* Heading */}
       <FadeIn delay={0} y={40} className="w-full mb-12 sm:mb-16 md:mb-20 text-center">
@@ -257,32 +294,11 @@ export function ProjectsSection() {
             index={index}
             totalCards={displayedProjects.length}
             scrollYProgress={scrollYProgress}
+            isLast={index === displayedProjects.length - 1}
+            showAll={showAll}
+            onToggleShowAll={handleToggle}
           />
         ))}
-      </div>
-
-      {/* View More / View Less Projects Button */}
-      <div className="mt-20 pb-12 flex justify-center w-full relative z-30">
-        <button
-          onClick={() => {
-            setShowAll(!showAll);
-            if (showAll) {
-              const el = document.getElementById('projects');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-          className="px-8 py-4 rounded-full border border-[#D7E2EA]/40 text-xs sm:text-sm font-bold uppercase tracking-widest text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-black transition-all cursor-pointer shadow-2xl flex items-center gap-2 bg-neutral-900/90 backdrop-blur-md hover:scale-105 active:scale-95"
-        >
-          {showAll ? (
-            <>
-              Less Projects <ChevronUp className="w-4 h-4" />
-            </>
-          ) : (
-            <>
-              More Projects <ChevronDown className="w-4 h-4" />
-            </>
-          )}
-        </button>
       </div>
     </section>
   );

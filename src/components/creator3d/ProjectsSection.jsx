@@ -11,9 +11,9 @@ const PROJECTS = [
     title: "Double Layer Photography Studio",
     url: "https://doublelayerphotography.com/",
     category: "Studio & Photography Portfolio",
-    col1Img1: "/images/projects/doublelayer.png",
+    col1Img1: "./images/projects/doublelayer.png",
     col1Img2: "https://doublelayerphotography.com/images/Tony/DLP_1000.jpg",
-    col2Img: "/images/projects/doublelayer.png"
+    col2Img: "./images/projects/doublelayer.png"
   },
   {
     id: "p2",
@@ -22,9 +22,9 @@ const PROJECTS = [
     title: "Pictura Australia Visual Experience",
     url: "https://pictura.au/",
     category: "Creative Photography Web",
-    col1Img1: "/images/projects/pictura.png",
+    col1Img1: "./images/projects/pictura.png",
     col1Img2: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80",
-    col2Img: "/images/projects/pictura.png"
+    col2Img: "./images/projects/pictura.png"
   },
   {
     id: "p3",
@@ -33,9 +33,9 @@ const PROJECTS = [
     title: "Trendy Pearls E-Commerce",
     url: "https://trendypearls.au/",
     category: "Luxury Jewellery E-Commerce",
-    col1Img1: "/images/projects/trendypearls.png",
+    col1Img1: "./images/projects/trendypearls.png",
     col1Img2: "https://trendypearls.au/images/hero_banner.jpg",
-    col2Img: "/images/projects/trendypearls.png"
+    col2Img: "./images/projects/trendypearls.png"
   },
   {
     id: "p4",
@@ -44,9 +44,9 @@ const PROJECTS = [
     title: "Brown Lights Media Kozhikode",
     url: "https://rohaneldhose2008.github.io/v2kozikode/",
     category: "Luxury Photography & Films",
-    col1Img1: "/images/projects/brownlights.png",
+    col1Img1: "./images/projects/brownlights.png",
     col1Img2: "https://rohaneldhose2008.github.io/v2kozikode/assets/images/STRIPEGALLERY/5.jpg",
-    col2Img: "/images/projects/brownlights.png"
+    col2Img: "./images/projects/brownlights.png"
   },
   {
     id: "p5",
@@ -55,9 +55,9 @@ const PROJECTS = [
     title: "Naomika Designs Fashion Studio",
     url: "https://rohaneldhose2008.github.io/naomika_designs_studio/index.html",
     category: "Fashion Design Studio",
-    col1Img1: "/images/projects/naomika.png",
+    col1Img1: "./images/projects/naomika.png",
     col1Img2: "https://rohaneldhose2008.github.io/naomika_designs_studio/images/1.jpeg",
-    col2Img: "/images/projects/naomika.png"
+    col2Img: "./images/projects/naomika.png"
   },
   {
     id: "p6",
@@ -66,9 +66,9 @@ const PROJECTS = [
     title: "Ebin & Alana Wedding Experience",
     url: "https://rohaneldhose2008.github.io/ebin-alana/",
     category: "Digital Wedding Invitation",
-    col1Img1: "/images/projects/ebinalana.png",
+    col1Img1: "./images/projects/ebinalana.png",
     col1Img2: "https://rohaneldhose2008.github.io/ebin-alana/images/couple.jpeg",
-    col2Img: "/images/projects/ebinalana.png"
+    col2Img: "./images/projects/ebinalana.png"
   },
   {
     id: "p7",
@@ -77,9 +77,9 @@ const PROJECTS = [
     title: "David Mathuis Baptism Celebration",
     url: "https://baptismofdavidmathuis.netlify.app/",
     category: "Digital Web Invitation",
-    col1Img1: "/images/projects/baptismofdavid.png",
+    col1Img1: "./images/projects/baptismofdavid.png",
     col1Img2: "https://baptismofdavidmathuis.netlify.app/assets/MAIN-DpWFpdPl.jpeg",
-    col2Img: "/images/projects/baptismofdavid.png"
+    col2Img: "./images/projects/baptismofdavid.png"
   },
   {
     id: "p8",
@@ -88,9 +88,9 @@ const PROJECTS = [
     title: "Franklin & Sarah Celebration",
     url: "https://nexoracreation.github.io/Franklin-Sarah/",
     category: "Digital Web Invitation",
-    col1Img1: "/images/projects/franklinsarah.png",
+    col1Img1: "./images/projects/franklinsarah.png",
     col1Img2: "https://nexoracreation.github.io/Franklin-Sarah/images/couple.jpeg",
-    col2Img: "/images/projects/franklinsarah.png"
+    col2Img: "./images/projects/franklinsarah.png"
   },
   {
     id: "p9",
@@ -99,9 +99,9 @@ const PROJECTS = [
     title: "Naomika Design Experience V2",
     url: "https://rohaneldhose2008.github.io/naomikadesignstudio/",
     category: "Digital Brochure",
-    col1Img1: "/images/projects/naomika2.png",
-    col1Img2: "/images/projects/naomika.png",
-    col2Img: "/images/projects/naomika2.png"
+    col1Img1: "./images/projects/naomika2.png",
+    col1Img2: "./images/projects/naomika.png",
+    col2Img: "./images/projects/naomika2.png"
   }
 ];
 

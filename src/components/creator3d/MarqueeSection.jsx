@@ -6,63 +6,63 @@ const REAL_PROJECTS = [
     title: 'Double Layer Photography',
     category: 'Studio & Photography Portfolio',
     url: 'https://doublelayerphotography.com/',
-    src: '/images/projects/doublelayer.png'
+    src: './images/projects/doublelayer.png'
   },
   {
     id: 'p2',
     title: 'Pictura Australia',
     category: 'Creative Photography Web',
     url: 'https://pictura.au/',
-    src: '/images/projects/pictura.png'
+    src: './images/projects/pictura.png'
   },
   {
     id: 'p3',
     title: 'Trendy Pearls Australia',
     category: 'Luxury Jewellery E-Commerce',
     url: 'https://trendypearls.au/',
-    src: '/images/projects/trendypearls.png'
+    src: './images/projects/trendypearls.png'
   },
   {
     id: 'p4',
     title: 'Brown Lights Media',
     category: 'Luxury Photography & Films',
     url: 'https://rohaneldhose2008.github.io/v2kozikode/',
-    src: '/images/projects/brownlights.png'
+    src: './images/projects/brownlights.png'
   },
   {
     id: 'p5',
     title: 'Naomika Designs Studio',
     category: 'Fashion Design Studio',
     url: 'https://rohaneldhose2008.github.io/naomika_designs_studio/index.html',
-    src: '/images/projects/naomika.png'
+    src: './images/projects/naomika.png'
   },
   {
     id: 'p6',
     title: 'Ebin & Alana',
     category: 'Digital Wedding Invitation',
     url: 'https://rohaneldhose2008.github.io/ebin-alana/',
-    src: '/images/projects/ebinalana.png'
+    src: './images/projects/ebinalana.png'
   },
   {
     id: 'p7',
     title: 'Baptism of David Mathuis',
     category: 'Digital Web Invitation',
     url: 'https://baptismofdavidmathuis.netlify.app/',
-    src: '/images/projects/baptismofdavid.png'
+    src: './images/projects/baptismofdavid.png'
   },
   {
     id: 'p8',
     title: 'Franklin & Sarah',
     category: 'Digital Web Invitation',
     url: 'https://nexoracreation.github.io/Franklin-Sarah/',
-    src: '/images/projects/franklinsarah.png'
+    src: './images/projects/franklinsarah.png'
   },
   {
     id: 'p9',
     title: 'Naomika Design Studio V2',
     category: 'Digital Brochure',
     url: 'https://rohaneldhose2008.github.io/naomikadesignstudio/',
-    src: '/images/projects/naomika2.png'
+    src: './images/projects/naomika2.png'
   }
 ];
 

@@ -75,14 +75,14 @@ export function HeroSection({ onNavigate }) {
           >
             {/* Mobile Hero Image (Screens < 768px) */}
             <img
-              src="/images/mobile-hero.png"
+              src="./images/mobile-hero.png"
               alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero"
               className="w-full h-auto max-h-[80vh] sm:max-h-[84vh] object-contain object-bottom drop-shadow-[0_30px_70px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%] md:hidden"
               loading="eager"
             />
             {/* Laptop / Desktop Hero Image (Screens >= 768px) */}
             <img
-              src="/images/laptop-hero.png"
+              src="./images/laptop-hero.png"
               alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero Laptop"
               className="w-full h-auto max-h-[82vh] lg:max-h-[86vh] object-contain object-bottom drop-shadow-[0_30px_70px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%] hidden md:block"
               loading="eager"

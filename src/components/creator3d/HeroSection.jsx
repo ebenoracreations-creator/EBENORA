@@ -63,29 +63,19 @@ export function HeroSection({ onNavigate }) {
         </FadeIn>
       </div>
 
-      {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10)
-          On mobile: anchored higher (top-[11%]) so head sits right under the navbar and body fills the screen.
-          On desktop: anchored bottom-0 as approved. */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[95vw] max-w-[440px] sm:max-w-[520px] md:max-w-[660px] lg:max-w-[780px] xl:max-w-[860px] top-[11%] sm:top-[10%] md:top-auto md:bottom-0 pointer-events-auto flex justify-center items-end">
-        <FadeIn delay={0.4} y={30} className="w-full flex justify-center items-end">
+      {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10) - Single unified hero for all devices */}
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[92vw] max-w-[420px] sm:max-w-[500px] md:max-w-[640px] lg:max-w-[760px] xl:max-w-[840px] bottom-0 pointer-events-auto flex justify-center items-end">
+        <FadeIn delay={0.35} y={30} className="w-full flex justify-center items-end">
           <Magnet
             strength={4}
             activeTransition="transform 0.2s ease-out"
             inactiveTransition="transform 0.5s ease-out"
             className="w-full flex justify-center items-end cursor-grab active:cursor-grabbing"
           >
-            {/* Mobile Hero Image (Screens < 768px) - Enhanced size & clarity */}
             <img
-              src="./images/mobile-hero.png"
+              src="./images/hero.png"
               alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero"
-              className="w-full h-auto max-h-[75vh] sm:max-h-[82vh] object-contain object-top drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)] filter contrast-[105%] brightness-[105%] md:hidden"
-              loading="eager"
-            />
-            {/* Laptop / Desktop Hero Image (Screens >= 768px) */}
-            <img
-              src="./images/laptop-hero.png"
-              alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero Laptop"
-              className="w-full h-auto max-h-[82vh] lg:max-h-[86vh] object-contain object-bottom drop-shadow-[0_30px_70px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%] hidden md:block"
+              className="w-full h-auto max-h-[76vh] sm:max-h-[80vh] md:max-h-[84vh] lg:max-h-[88vh] object-contain object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
               loading="eager"
             />
           </Magnet>

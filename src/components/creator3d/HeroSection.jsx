@@ -51,8 +51,10 @@ export function HeroSection({ onNavigate }) {
       <div className="absolute top-[13%] sm:top-[14%] md:top-[42%] -translate-y-1/2 left-0 w-full px-4 sm:px-6 md:px-10 z-20 md:z-0 pointer-events-none flex justify-center items-center">
         <FadeIn delay={0.15} y={40} className="w-full flex flex-col items-center">
           <h1
-            className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap text-center drop-shadow-[0_10px_30px_rgba(0,0,0,0.95)]"
-            style={{ fontSize: 'clamp(1.35rem, 6.8vw, 13.5vw)' }}
+            className="hero-heading font-black uppercase leading-none whitespace-nowrap text-center drop-shadow-[0_10px_30px_rgba(0,0,0,0.95)] tracking-[0.08em] md:tracking-[0.12em]"
+            style={{
+              fontSize: 'clamp(1rem, 5.8vw, 12.5vw)'
+            }}
           >
             hi, i&apos;m ebenora
           </h1>
@@ -85,9 +87,9 @@ export function HeroSection({ onNavigate }) {
       <div className="hidden md:flex absolute top-[42%] -translate-y-1/2 left-0 w-full px-4 z-20 pointer-events-none justify-center items-center">
         <FadeIn delay={0.15} y={40} className="w-full flex justify-center">
           <span
-            className="font-black uppercase tracking-tight leading-none whitespace-nowrap text-center block"
+            className="font-black uppercase leading-none whitespace-nowrap text-center block tracking-[0.08em] md:tracking-[0.12em]"
             style={{
-              fontSize: 'clamp(1.35rem, 6.8vw, 13.5vw)',
+              fontSize: 'clamp(1rem, 5.8vw, 12.5vw)',
               color: 'transparent',
               WebkitTextStroke: '2px #BBCCD7'
             }}

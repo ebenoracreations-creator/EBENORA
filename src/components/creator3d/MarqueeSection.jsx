@@ -85,10 +85,7 @@ export function MarqueeSection() {
     <section className="bg-[#0C0C0C] pt-24 sm:pt-32 md:pt-40 pb-12 overflow-hidden w-full select-none">
       {/* Title */}
       <div className="max-w-6xl mx-auto px-6 mb-10 text-center">
-        <span className="text-xs uppercase tracking-widest text-[#BBCCD7] font-semibold">
-          [ SELECTED WORKS & DIGITAL EXPERIENCES ]
-        </span>
-        <h3 className="hero-heading text-3xl sm:text-5xl font-black uppercase tracking-tight mt-1">
+        <h3 className="hero-heading text-3xl sm:text-5xl font-black uppercase tracking-tight">
           Project Showcase
         </h3>
       </div>
@@ -114,7 +111,7 @@ export function MarqueeSection() {
                 {/* Details Overlay: ALWAYS VISIBLE AS REQUESTED */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent flex flex-col justify-end p-4 sm:p-5 text-left pointer-events-none">
                   <span className="text-[10px] sm:text-xs uppercase font-mono font-bold text-[#BBCCD7] tracking-wider">
-                    [{item.category}]
+                    {item.category}
                   </span>
                   <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-tight line-clamp-1 mt-0.5">
                     {item.title}
@@ -156,7 +153,7 @@ export function MarqueeSection() {
                 {/* Details Overlay: ALWAYS VISIBLE AS REQUESTED */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent flex flex-col justify-end p-4 sm:p-5 text-left pointer-events-none">
                   <span className="text-[10px] sm:text-xs uppercase font-mono font-bold text-[#BBCCD7] tracking-wider">
-                    [{item.category}]
+                    {item.category}
                   </span>
                   <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-tight line-clamp-1 mt-0.5">
                     {item.title}

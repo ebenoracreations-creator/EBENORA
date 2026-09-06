@@ -12,7 +12,7 @@ export default function BrandingPage() {
       <section className="py-16 lg:py-24 border-b border-neutral-900 bg-[#0C0C0C]">
         <div className="container mx-auto text-center max-w-4xl space-y-6 px-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#BBCCD7]/10 border border-[#BBCCD7]/30 text-xs font-semibold text-[#BBCCD7] uppercase tracking-widest">
-            <span>[ GRAPHIC DESIGN & BRANDING KOCHI ]</span>
+            <span>GRAPHIC DESIGN & BRANDING KOCHI</span>
           </div>
 
           <h1 className="hero-heading font-black text-4xl sm:text-6xl uppercase tracking-tight leading-tight">

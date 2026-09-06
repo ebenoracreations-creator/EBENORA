@@ -55,9 +55,6 @@ export function CreatorPortfolioPage() {
       {/* CALL TO ACTION BANNER */}
       <section className="w-full bg-[#18011F] text-white py-20 px-6 text-center border-t border-[#B600A8]/30 relative overflow-hidden">
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-6 relative z-10">
-          <span className="text-xs uppercase tracking-widest text-[#BBCCD7] font-semibold">
-            [ Start Your Project ]
-          </span>
           <h2 className="hero-heading font-black text-3xl sm:text-5xl uppercase tracking-tight">
             Ready to turn your idea into something unforgettable?
           </h2>

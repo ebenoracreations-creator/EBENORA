@@ -116,7 +116,7 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-neutral-800 pb-4 gap-3">
                   <div>
                     <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#BBCCD7]">
-                      [{categoryLabel}]
+                      {categoryLabel}
                     </span>
                     <h2 className="hero-heading font-black text-2xl sm:text-3xl uppercase tracking-tight mt-1">
                       {projectTitle}
@@ -183,9 +183,6 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
 
               {/* Bottom Scrolled Call To Action Banner */}
               <div className="mt-10 pt-8 border-t border-neutral-800 flex flex-col items-center text-center gap-4 bg-gradient-to-b from-transparent to-[#18011F]/50 p-6 rounded-2xl">
-                <span className="text-xs uppercase tracking-widest text-[#BBCCD7] font-semibold">
-                  [ Get Your Custom Website ]
-                </span>
                 <h3 className="text-xl sm:text-2xl font-black uppercase text-[#D7E2EA]">
                   Contact Ebenora Creations for a Website Like This!
                 </h3>

@@ -160,7 +160,7 @@ function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, on
               </span>
               <div className="flex flex-col">
                 <span className="text-xs font-light uppercase tracking-widest text-[#BBCCD7]">
-                  [{project.category}]
+                  {project.category}
                 </span>
                 <h3 className="text-lg sm:text-2xl font-medium uppercase tracking-tight text-[#D7E2EA]">
                   {project.name}

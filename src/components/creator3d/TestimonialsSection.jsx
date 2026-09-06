@@ -28,10 +28,7 @@ export function TestimonialsSection() {
     <section className="w-full bg-[#0C0C0C] text-[#D7E2EA] px-5 sm:px-8 md:px-10 py-20 relative z-10 border-t border-neutral-900">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <FadeIn delay={0} y={30} className="w-full text-center mb-12 sm:mb-16">
-          <span className="text-xs uppercase tracking-widest text-[#BBCCD7] font-semibold">
-            [ Client Feedback ]
-          </span>
-          <h2 className="hero-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight mt-2">
+          <h2 className="hero-heading font-black text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight">
             What Clients Say
           </h2>
         </FadeIn>

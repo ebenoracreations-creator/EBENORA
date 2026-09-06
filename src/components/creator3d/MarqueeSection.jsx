@@ -25,14 +25,16 @@ const REAL_PROJECTS = [
   {
     id: 'p4',
     title: 'Brown Lights Media',
-    category: 'Luxury Photography & Films',
+    category: 'Website Under Creation',
+    isUnderConstruction: true,
     url: 'https://rohaneldhose2008.github.io/v2kozikode/',
     src: './images/projects/brownlights.png'
   },
   {
     id: 'p5',
     title: 'Naomika Designs Studio',
-    category: 'Fashion Design Studio',
+    category: 'Website Under Creation',
+    isUnderConstruction: true,
     url: 'https://rohaneldhose2008.github.io/naomika_designs_studio/index.html',
     src: './images/projects/naomika.png'
   },
@@ -72,6 +74,10 @@ export function MarqueeSection() {
   const row2Tripled = [...row2Items, ...row2Items, ...row2Items];
 
   const handleTileClick = (item) => {
+    if (item.isUnderConstruction) {
+      alert('Website Under Creation — This website is currently in progress and will be launching soon!');
+      return;
+    }
     window.open(item.url, '_blank', 'noopener,noreferrer');
   };
 
@@ -114,9 +120,15 @@ export function MarqueeSection() {
                     {item.title}
                   </h4>
                   <div className="pt-2">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-bold text-[#D7E2EA] group-hover:bg-[#D7E2EA] group-hover:text-black transition-all">
-                      View Live Website ↗
-                    </span>
+                    {item.isUnderConstruction ? (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/40 text-[11px] font-bold text-amber-300">
+                        ⏳ Website Under Creation
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-bold text-[#D7E2EA] group-hover:bg-[#D7E2EA] group-hover:text-black transition-all">
+                        View Live Website ↗
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -150,9 +162,15 @@ export function MarqueeSection() {
                     {item.title}
                   </h4>
                   <div className="pt-2">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-bold text-[#D7E2EA] group-hover:bg-[#D7E2EA] group-hover:text-black transition-all">
-                      View Live Website ↗
-                    </span>
+                    {item.isUnderConstruction ? (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/40 text-[11px] font-bold text-amber-300">
+                        ⏳ Website Under Creation
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-bold text-[#D7E2EA] group-hover:bg-[#D7E2EA] group-hover:text-black transition-all">
+                        View Live Website ↗
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>

@@ -20,6 +20,10 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
 
   const handleVisitSite = (e) => {
     e.preventDefault();
+    if (project.isUnderConstruction) {
+      alert('Website Under Creation — This website is currently in progress and will be launching soon!');
+      return;
+    }
     // Opens target site in a new tab so user's main tab stays safely on Ebenora site
     window.open(projectUrl, '_blank', 'noopener,noreferrer');
   };
@@ -74,13 +78,19 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
                 </button>
               </div>
 
-              <button
-                onClick={handleVisitSite}
-                className="px-4 py-1.5 rounded-full text-xs font-bold bg-[#BBCCD7] text-black hover:bg-white transition-all flex items-center gap-1 cursor-pointer"
-              >
-                <span>Visit Site</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </button>
+              {project.isUnderConstruction ? (
+                <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-400/20 border border-amber-400/40 text-amber-300">
+                  ⏳ Under Creation
+                </span>
+              ) : (
+                <button
+                  onClick={handleVisitSite}
+                  className="px-4 py-1.5 rounded-full text-xs font-bold bg-[#BBCCD7] text-black hover:bg-white transition-all flex items-center gap-1 cursor-pointer"
+                >
+                  <span>Visit Site</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </button>
+              )}
 
               {/* Close Button */}
               <button
@@ -113,13 +123,19 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
                     </h2>
                   </div>
 
-                  <button
-                    onClick={handleVisitSite}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#BBCCD7]/10 border border-[#BBCCD7]/40 text-[#BBCCD7] hover:bg-[#BBCCD7] hover:text-black transition-all cursor-pointer"
-                  >
-                    <span>Open Live Website</span>
-                    <ArrowUpRight className="w-4 h-4" />
-                  </button>
+                  {project.isUnderConstruction ? (
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-amber-400/20 border border-amber-400/40 text-amber-300">
+                      <span>⏳ Website Under Creation</span>
+                    </span>
+                  ) : (
+                    <button
+                      onClick={handleVisitSite}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#BBCCD7]/10 border border-[#BBCCD7]/40 text-[#BBCCD7] hover:bg-[#BBCCD7] hover:text-black transition-all cursor-pointer"
+                    >
+                      <span>Open Live Website</span>
+                      <ArrowUpRight className="w-4 h-4" />
+                    </button>
+                  )}
                 </div>
 
                 {/* Uncropped Full View Showcase Container */}
@@ -133,12 +149,14 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
                     <p className="text-xs sm:text-sm text-[#D7E2EA]/90 font-light leading-relaxed max-w-xl">
                       {projectDesc}
                     </p>
-                    <button
-                      onClick={handleVisitSite}
-                      className="px-6 py-3 rounded-full text-xs font-bold bg-[#BBCCD7] text-black hover:bg-white transition-all shrink-0 cursor-pointer flex items-center gap-1.5"
-                    >
-                      Visit {projectTitle} <ArrowUpRight className="w-4 h-4" />
-                    </button>
+                    {!project.isUnderConstruction && (
+                      <button
+                        onClick={handleVisitSite}
+                        className="px-6 py-3 rounded-full text-xs font-bold bg-[#BBCCD7] text-black hover:bg-white transition-all shrink-0 cursor-pointer flex items-center gap-1.5"
+                      >
+                        Visit {projectTitle} <ArrowUpRight className="w-4 h-4" />
+                      </button>
+                    )}
                   </div>
                 </div>
 
@@ -189,12 +207,14 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
                   >
                     Contact Ebenora Creations →
                   </a>
-                  <button
-                    onClick={handleVisitSite}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-[#D7E2EA]/40 px-6 py-3.5 text-xs font-bold uppercase tracking-widest text-[#D7E2EA] hover:bg-[#D7E2EA]/10 transition-colors cursor-pointer"
-                  >
-                    Visit Live Site <ArrowUpRight className="w-4 h-4" />
-                  </button>
+                  {!project.isUnderConstruction && (
+                    <button
+                      onClick={handleVisitSite}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-[#D7E2EA]/40 px-6 py-3.5 text-xs font-bold uppercase tracking-widest text-[#D7E2EA] hover:bg-[#D7E2EA]/10 transition-colors cursor-pointer"
+                    >
+                      Visit Live Site <ArrowUpRight className="w-4 h-4" />
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -203,12 +223,14 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
           {/* Footer Bar */}
           <div className="px-6 py-3 bg-neutral-900 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#D7E2EA]/70 shrink-0">
             <span>⚡ Viewing Showcase — Ebenora Creations</span>
-            <button
-              onClick={handleVisitSite}
-              className="text-[#BBCCD7] font-semibold hover:underline flex items-center gap-1 cursor-pointer"
-            >
-              Visit {projectTitle} <ArrowUpRight className="w-3.5 h-3.5" />
-            </button>
+            {!project.isUnderConstruction && (
+              <button
+                onClick={handleVisitSite}
+                className="text-[#BBCCD7] font-semibold hover:underline flex items-center gap-1 cursor-pointer"
+              >
+                Visit {projectTitle} <ArrowUpRight className="w-3.5 h-3.5" />
+              </button>
+            )}
           </div>
         </motion.div>
       </div>

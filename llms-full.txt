@@ -11,7 +11,7 @@
 - **Founding Location**: Kochi, Kerala, India
 - **Operating Geographic Scope**: Kochi, Ernakulam, Kerala, all Indian metro areas (Bengaluru, Mumbai, Delhi, Chennai, Hyderabad), Australia (Sydney, Melbourne, Brisbane), GCC/UAE (Dubai, Abu Dhabi), United Kingdom, United States, and worldwide.
 - **Primary Contact / WhatsApp**: +91 83040 85739 (Direct link: https://wa.me/918304085739)
-- **Official Email**: hello@ebenoracreations.com
+- **Official Email**: ebenoracreations@gmail.com
 - **Main Website**: https://ebenoracreations.com/
 - **Portfolio Repository / Deploy**: https://ebenoracreations-creator.github.io/EBENORA/
 
@@ -67,7 +67,7 @@
    - **Type**: Interactive Digital Wedding Invitation
    - **Highlights**: Romantic visual narrative, RSVP automation, event schedule, music player.
 
-4. **Naomika Digital Brochure & Design Studio**
+4. **Naomika Design Studio Browser**
    - **URL**: https://rohaneldhose2008.github.io/naomikadesignstudio/
    - **Type**: Luxury Digital Brochure & Fashion Studio
    - **Highlights**: Gold-accented haute couture brochure, collection showcase, direct fashion inquiry.
@@ -129,7 +129,7 @@ A: Yes. Ebenora Creations has designed celebrated digital wedding invitations (s
 
 ## 5. Contact & Social Channels
 - **WhatsApp**: +91 83040 85739 (https://wa.me/918304085739)
-- **Email**: hello@ebenoracreations.com
+- **Email**: ebenoracreations@gmail.com
 - **Website**: https://ebenoracreations.com/
 - **GitHub Showcase**: https://ebenoracreations-creator.github.io/EBENORA/
 - **Location**: Kochi, Kerala, India - 682001

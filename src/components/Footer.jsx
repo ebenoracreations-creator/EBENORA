@@ -8,7 +8,7 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const whatsappUrl = "https://wa.me/919037352739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I would like to discuss a strategic creative project for my business.");
+  const whatsappUrl = "https://wa.me/918304085739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I would like to discuss a strategic creative project for my business.");
 
   return (
     <footer className="bg-[#050505] text-[#A4A4A4] pt-24 pb-12 border-t border-[#292929] relative overflow-hidden font-manrope">
@@ -60,9 +60,9 @@ export default function Footer() {
             <h4 className="text-[#F5F2EA] text-xs font-dmsans font-bold uppercase tracking-widest mb-5 text-[#D9B15F]">DIRECT INQUIRY</h4>
             
             <div className="space-y-4 text-xs font-dmsans">
-              <a href="tel:+919037352739" className="flex items-center gap-2.5 text-[#F1D38A] hover:underline font-bold text-sm">
+              <a href="tel:+918304085739" className="flex items-center gap-2.5 text-[#F1D38A] hover:underline font-bold text-sm">
                 <Phone className="w-4 h-4 text-[#D9B15F]" />
-                <span>+91 903 735 2739</span>
+                <span>+91 83040 85739</span>
               </a>
 
               <a 

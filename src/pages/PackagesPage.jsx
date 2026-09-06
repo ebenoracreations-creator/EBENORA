@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, Sparkles, HelpCircle, ArrowRight } from 'lucide-react';
 
 export default function PackagesPage() {
-  const whatsappUrl = "https://wa.me/919037352739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I'd like to discuss a custom package for my website.");
+  const whatsappUrl = "https://wa.me/918304085739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I'd like to discuss a custom package for my website.");
 
   return (
     <div className="pt-32 pb-20">

@@ -8,7 +8,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  const whatsappUrl = "https://wa.me/919037352739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I'd like to discuss a strategic creative project for my business.");
+  const whatsappUrl = "https://wa.me/918304085739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I'd like to discuss a strategic creative project for my business.");
 
   useEffect(() => {
     const handleScroll = () => {

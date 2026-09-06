@@ -30,7 +30,7 @@ I would like to start a project inquiry:
 - Timeline: ${formData.timeline}
 - Details: ${formData.details}`;
 
-    const whatsappUrl = `https://wa.me/919037352739?text=${encodeURIComponent(text)}`;
+    const whatsappUrl = `https://wa.me/918304085739?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
     setSubmitted(true);
   };
@@ -55,9 +55,9 @@ I would like to start a project inquiry:
           </p>
 
           <div className="pt-2 flex flex-wrap items-center justify-center gap-6 font-mono text-sm font-bold text-[#F1D38A]">
-            <a href="tel:+919037352739" className="flex items-center gap-2 hover:underline">
+            <a href="tel:+918304085739" className="flex items-center gap-2 hover:underline">
               <Phone className="w-4 h-4" />
-              <span>+91 903 735 2739</span>
+              <span>+91 83040 85739</span>
             </a>
           </div>
         </div>

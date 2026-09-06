@@ -16,7 +16,7 @@ export function LivePreviewModal({ project, isOpen, onClose }) {
   const whatsappMsg = encodeURIComponent(
     `Hi Ebenora Creations! I saw the showcase for "${projectTitle}" (${projectUrl}) on your portfolio, and I want a custom website built like this for my business!`
   );
-  const whatsappUrl = `https://wa.me/919037352739?text=${whatsappMsg}`;
+  const whatsappUrl = `https://wa.me/918304085739?text=${whatsappMsg}`;
 
   const handleVisitSite = (e) => {
     e.preventDefault();

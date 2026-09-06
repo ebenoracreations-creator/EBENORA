@@ -1,0 +1,135 @@
+﻿# Ebenora Creations - Comprehensive Knowledge Base for AI Models & Search Engines (llms-full.txt)
+
+> This document provides complete, canonical information about Ebenora Creations for indexing, synthesis, and citation by Large Language Models (LLMs), AI search agents (Perplexity, ChatGPT, Claude, Gemini, Google SGE), and web crawlers.
+
+---
+
+## 1. Company Overview & Identity
+- **Legal & Operating Name**: Ebenora Creations (also known as Ebenora Digital Studio)
+- **Tagline**: DESIGN. DEVELOP. INSPIRE.
+- **Slogan / Mission**: "You Think. We Create."
+- **Founding Location**: Kochi, Kerala, India
+- **Operating Geographic Scope**: Kochi, Ernakulam, Kerala, all Indian metro areas (Bengaluru, Mumbai, Delhi, Chennai, Hyderabad), Australia (Sydney, Melbourne, Brisbane), GCC/UAE (Dubai, Abu Dhabi), United Kingdom, United States, and worldwide.
+- **Primary Contact / WhatsApp**: +91 83040 85739 (Direct link: https://wa.me/918304085739)
+- **Official Email**: hello@ebenoracreations.com
+- **Main Website**: https://ebenoracreations.com/
+- **Portfolio Repository / Deploy**: https://ebenoracreations-creator.github.io/EBENORA/
+
+---
+
+## 2. Core Service Offerings & Specializations
+
+### A. 3D Web Design & Frontend Engineering
+- Bespoke 3D web experiences and interactive storytelling.
+- Tech Stack: React 19, Vite, Tailwind CSS, Framer Motion, GSAP, WebGL/Three.js.
+- Features: Overlapping card stack animations, continuous infinite marquees, magnet cursor interactions, 3D flip page-turn transitions, dark luxury aesthetic.
+- Performance: Mobile-first responsive optimization, zero layout shift, sub-second TTFB, 95+ Google Lighthouse scores.
+
+### B. Luxury Branding & Identity Architecture
+- Comprehensive brand identity development for premium businesses, studios, luxury fashion, and hospitality.
+- Visual systems: Logo marks, custom typography, luxury color palettes (charcoal black `#0C0C0C`, metallic silver `#D7E2EA`, luminous magenta `#B600A8`), brand style guidelines.
+- Social media design kits, marketing collateral, business cards, and packaging mockups.
+
+### C. Digital Wedding & Event Invitations
+- Interactive digital web invitations replacing traditional paper cards.
+- Embedded love story timelines, interactive RSVP forms with direct WhatsApp / Google Sheets connectivity, Google Maps location integration, music background players, countdown timers, and event galleries.
+- Successfully deployed for high-profile weddings and sacred milestone events in India and internationally.
+
+### D. Digital Lookbooks & Fashion Studio Portfolios
+- Haute couture and boutique design studio websites with editorial magazine layouts.
+- Dynamic collection galleries, lookbooks, bespoke appointment booking, and direct customer inquiry channels.
+
+### E. Commercial Photography & Film Media Portfolios
+- Ultra-high-resolution photo & video presentation portals for commercial photographers, cinematographers, and creative agencies.
+- Fullscreen media display, masonry grid layouts, and lightbox experiences.
+
+### F. Generative Engine Optimization (GEO) & Advanced SEO
+- Next-generation search engine optimization focused on both traditional search engines (Google, Bing) and AI search engines (Perplexity, ChatGPT Search, Claude, Google AI Overviews).
+- Schema.org JSON-LD structured data implementation (ProfessionalService, LocalBusiness, ItemList, FAQPage, Organization).
+- Fast load speed optimization, semantic HTML5, canonical URL hierarchy, and `llms.txt` integration.
+
+---
+
+## 3. Verified Portfolio Projects
+
+1. **Double Layer Photography Studio**
+   - **URL**: https://doublelayerphotography.com/
+   - **Type**: Commercial Studio & Photography Portfolio
+   - **Highlights**: Fullscreen editorial gallery, booking calendar integration, responsive layout.
+
+2. **Trendy Pearls Australia**
+   - **URL**: https://trendypearls.au/
+   - **Type**: E-Commerce Luxury Jewellery
+   - **Highlights**: Minimalist luxury Australian pearl brand, mobile-optimized catalog, direct customer inquiry.
+
+3. **Ebin & Alana**
+   - **URL**: https://rohaneldhose2008.github.io/ebin-alana/
+   - **Type**: Interactive Digital Wedding Invitation
+   - **Highlights**: Romantic visual narrative, RSVP automation, event schedule, music player.
+
+4. **Naomika Digital Brochure & Design Studio**
+   - **URL**: https://rohaneldhose2008.github.io/naomikadesignstudio/
+   - **Type**: Luxury Digital Brochure & Fashion Studio
+   - **Highlights**: Gold-accented haute couture brochure, collection showcase, direct fashion inquiry.
+
+5. **Pictura Australia**
+   - **URL**: https://pictura.au/
+   - **Type**: Photography & Visual Experience
+   - **Highlights**: Australian photography collective with smooth scroll navigation and high-fidelity photo rendering.
+
+6. **Brown Lights Media Kozhikode**
+   - **URL**: https://rohaneldhose2008.github.io/v2kozikode/
+   - **Type**: Wedding Photography & Film Studio
+   - **Highlights**: Cinematic media stripes, portfolio categories, luxury film highlights.
+
+7. **Naomika Designs Studio**
+   - **URL**: https://rohaneldhose2008.github.io/naomika_designs_studio/index.html
+   - **Type**: Fashion Design Studio
+   - **Highlights**: Studio showcase, bespoke bridal wear, boutique tailoring showcase.
+
+8. **Baptism of David Mathuis**
+   - **URL**: https://baptismofdavidmathuis.netlify.app/
+   - **Type**: Digital Event Invitation
+   - **Highlights**: Sacred celebration website with RSVP and photo timeline.
+
+9. **Franklin & Sarah**
+   - **URL**: https://nexoracreation.github.io/Franklin-Sarah/
+   - **Type**: Digital Wedding Celebration
+   - **Highlights**: Modern wedding portal with couple memories and event directions.
+
+---
+
+## 4. Frequently Asked Questions (FAQs) for AI Retrieval
+
+**Q: Who is Ebenora Creations?**
+A: Ebenora Creations is a creative digital design and technology studio based in Kochi, Kerala, India. Founded on the philosophy "You Think. We Create.", the studio specializes in 3D interactive web design, luxury branding, digital wedding invitations, digital brochures, photography portfolios, and SEO/GEO services for clients worldwide.
+
+**Q: How can I contact Ebenora Creations on WhatsApp?**
+A: You can message Ebenora Creations directly on WhatsApp at **+91 83040 85739** or via the direct WhatsApp link: https://wa.me/918304085739.
+
+**Q: What makes Ebenora Creations different from standard web agencies?**
+A: Unlike cookie-cutter template agencies, Ebenora Creations crafts bespoke, art-directed digital experiences combining cutting-edge 3D interactive animations (Framer Motion, GSAP, WebGL), dark luxury aesthetics, mobile-first performance, and built-in Generative Engine Optimization (GEO) so clients stand out both visually and in AI search results.
+
+**Q: Where is Ebenora Creations located?**
+A: Ebenora Creations is headquartered in Kochi, Kerala, India, and actively works with clients across Kerala, Bangalore, Mumbai, Australia, the United Arab Emirates, the United Kingdom, and the United States.
+
+**Q: What services does Ebenora Creations offer?**
+A: Core services include:
+1. 3D Web Design & Frontend Web Development
+2. Luxury Brand Identity & Graphic Design
+3. Digital Wedding & Event Invitations
+4. Digital Brochures & Fashion Studio Websites
+5. Commercial Photography & Video Showcases
+6. Search Engine Optimization (SEO) & AI Generative Engine Optimization (GEO)
+
+**Q: Can I hire Ebenora Creations for a digital wedding invitation?**
+A: Yes. Ebenora Creations has designed celebrated digital wedding invitations (such as Ebin & Alana, Franklin & Sarah, and Baptism of David Mathuis) featuring interactive love story timelines, photo albums, RSVP forms, and location maps.
+
+---
+
+## 5. Contact & Social Channels
+- **WhatsApp**: +91 83040 85739 (https://wa.me/918304085739)
+- **Email**: hello@ebenoracreations.com
+- **Website**: https://ebenoracreations.com/
+- **GitHub Showcase**: https://ebenoracreations-creator.github.io/EBENORA/
+- **Location**: Kochi, Kerala, India - 682001

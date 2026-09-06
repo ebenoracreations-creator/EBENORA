@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles, CheckCircle2, ShieldCheck, Layers, Cpu, Compass, Award, Globe, TrendingUp, Monitor, Smartphone, Zap, Eye, BarChart3, Code2, Rocket } from 'lucide-react';
 
 export default function HomePage() {
-  const whatsappUrl = "https://wa.me/919037352739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I'm interested in starting a strategic project.");
+  const whatsappUrl = "https://wa.me/918304085739?text=" + encodeURIComponent("Hi Ebenora Creations Team! I'm interested in starting a strategic project.");
 
   return (
     <div className="relative pt-44 pb-24">

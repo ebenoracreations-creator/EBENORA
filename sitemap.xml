@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage & Main 3D Creator Experience -->
+  <url>
+    <loc>https://ebenoracreations.com/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/hero.png</image:loc>
+      <image:title>Ebenora Creations 3D Hero - Creative Digital Studio in Kochi, Kerala</image:title>
+    </image:image>
+  </url>
+
+  <!-- GitHub Pages Primary Canonical URL -->
+  <url>
+    <loc>https://ebenoracreations-creator.github.io/EBENORA/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ebenoracreations-creator.github.io/EBENORA/images/hero.png</image:loc>
+      <image:title>Ebenora Creations 3D Hero</image:title>
+    </image:image>
+  </url>
+
+  <!-- Projects Showcase Section -->
+  <url>
+    <loc>https://ebenoracreations.com/#projects</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/doublelayer.png</image:loc>
+      <image:title>Double Layer Photography Studio Website</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/trendypearls.png</image:loc>
+      <image:title>Trendy Pearls Australia Luxury E-Commerce</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/ebinalana.png</image:loc>
+      <image:title>Ebin &amp; Alana Digital Wedding Experience</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/naomika2.png</image:loc>
+      <image:title>Naomika Digital Brochure &amp; Fashion Studio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/pictura.png</image:loc>
+      <image:title>Pictura Australia Visual Experience</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/brownlights.png</image:loc>
+      <image:title>Brown Lights Media Kozhikode Photography</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/naomika.png</image:loc>
+      <image:title>Naomika Designs Fashion Studio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/baptismofdavid.png</image:loc>
+      <image:title>Baptism of David Mathuis Celebration Invitation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/projects/franklinsarah.png</image:loc>
+      <image:title>Franklin &amp; Sarah Digital Wedding Celebration</image:title>
+    </image:image>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://ebenoracreations.com/#services</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://ebenoracreations.com/#about</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact & WhatsApp Inquiry -->
+  <url>
+    <loc>https://ebenoracreations.com/#contact</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

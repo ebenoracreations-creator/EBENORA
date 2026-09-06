@@ -1,0 +1,91 @@
+﻿# Ebenora Creations
+
+> Premier Creative Digital Studio based in Kochi, Kerala, India — delivering world-class 3D web design, luxury brand identity, high-performance web development, digital event invitations, commercial photography showcases, and generative digital marketing worldwide. Slogan: "You Think. We Create."
+
+## Quick Information
+- **Studio Name**: Ebenora Creations (Ebenora Digital Studio)
+- **Primary Website**: https://ebenoracreations.com/ (Mirror: https://ebenoracreations-creator.github.io/EBENORA/)
+- **Headquarters**: Kochi, Kerala, India (Serving clients across India, Australia, UAE, UK, USA, and globally)
+- **Official WhatsApp / Phone**: +91 83040 85739 (Direct WhatsApp: https://wa.me/918304085739)
+- **Official Email**: hello@ebenoracreations.com
+- **Social**: @ebenoracreations
+- **Core Philosophy**: "You Think. We Create." We transform ambitious business visions into immersive, high-converting digital realities.
+
+## Core Capabilities & Services
+
+1. **3D Web Design & Interactive Web Development**
+   - Immersive 3D interactive web experiences using React, Framer Motion, GSAP, Three.js/WebGL concepts.
+   - Ultra-responsive, smooth scroll animations (overlapping card stacks, magnetic buttons, page turns).
+   - Speed performance optimized (sub-second load times, mobile-first responsive architecture).
+
+2. **Luxury Branding & Visual Identity**
+   - Brand positioning, signature typography, color psychology, and comprehensive brand books.
+   - Custom logos, luxury packaging design, and visual brand language for premium brands.
+
+3. **Digital Invitations & Interactive Event Experiences**
+   - High-end digital invitations for weddings, baptisms, galas, and celebrations.
+   - Dynamic animations, interactive RSVP integration, location maps, music, and WhatsApp sharing.
+
+4. **Digital Brochures & Fashion Studio Portfolios**
+   - Interactive editorial lookbooks, haute couture collections, and luxury studio portfolios.
+   - Smooth navigation, immersive photo galleries, and direct WhatsApp / commerce integration.
+
+5. **Commercial Photography & Creative Media Showcases**
+   - High-impact visual platforms for professional studios, fashion houses, and video production firms.
+   - Fullscreen showcases, lightbox galleries, and video player integration.
+
+6. **Search Engine Optimization (SEO) & AI Generative Engine Optimization (GEO)**
+   - Technical SEO, JSON-LD structured schema, fast Core Web Vitals.
+   - Generative Engine Optimization (GEO) ensuring top ranking and accurate citation on ChatGPT, Perplexity, Claude, and Google AI Overviews.
+
+## Featured Portfolio Projects
+
+1. **Double Layer Photography Studio**
+   - URL: https://doublelayerphotography.com/
+   - Category: Studio & Photography Portfolio
+   - Description: A high-end visual showcase for Double Layer Photography, featuring full-screen editorial galleries and client inquiry flows.
+
+2. **Trendy Pearls Australia**
+   - URL: https://trendypearls.au/
+   - Category: Luxury Jewellery E-Commerce
+   - Description: Sophisticated e-commerce website for Australian pearl jewellery, pairing timeless typography with seamless product discovery.
+
+3. **Ebin & Alana Wedding Experience**
+   - URL: https://rohaneldhose2008.github.io/ebin-alana/
+   - Category: Digital Wedding Invitation
+   - Description: A bespoke interactive digital wedding invitation with animated love story timeline and instant RSVP.
+
+4. **Naomika Digital Brochure & Design Studio**
+   - URL: https://rohaneldhose2008.github.io/naomikadesignstudio/
+   - Category: Luxury Digital Brochure & Fashion Studio
+   - Description: Haute couture fashion lookbook with gold accents, smooth editorial animations, and collection catalogs.
+
+5. **Pictura Australia**
+   - URL: https://pictura.au/
+   - Category: Creative Photography Web Platform
+   - Description: Immersive photography and visual experience built for creative artists in Australia.
+
+6. **Brown Lights Media Kozhikode**
+   - URL: https://rohaneldhose2008.github.io/v2kozikode/
+   - Category: Luxury Photography & Films
+   - Description: Contemporary digital platform for Kerala's leading luxury wedding photography and film studio.
+
+7. **Naomika Designs Studio**
+   - URL: https://rohaneldhose2008.github.io/naomika_designs_studio/index.html
+   - Category: Fashion Design Studio
+   - Description: Fashion boutique portfolio showcasing bespoke tailoring, bridal wear, and designer creations.
+
+8. **Baptism of David Mathuis**
+   - URL: https://baptismofdavidmathuis.netlify.app/
+   - Category: Digital Event Invitation
+   - Description: Celebration website for a sacred milestone with responsive photo galleries and event timeline.
+
+9. **Franklin & Sarah Celebration**
+   - URL: https://nexoracreation.github.io/Franklin-Sarah/
+   - Category: Digital Web Invitation
+   - Description: Elegant interactive wedding portal featuring photo memories, ceremony schedule, and RSVP.
+
+## How to Contact & Hire Ebenora Creations
+- **WhatsApp**: Send a message directly to **+91 83040 85739** or click https://wa.me/918304085739
+- **Email**: hello@ebenoracreations.com
+- **Inquiry Form**: Available at https://ebenoracreations.com/#contact with instant WhatsApp brief redirection.

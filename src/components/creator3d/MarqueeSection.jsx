@@ -59,7 +59,7 @@ const REAL_PROJECTS = [
   },
   {
     id: 'p9',
-    title: 'Naomika Design Studio V2',
+    title: 'Naomika Design Studio Browser',
     category: 'Digital Brochure',
     url: 'https://rohaneldhose2008.github.io/naomikadesignstudio/',
     src: './images/projects/naomika2.png'

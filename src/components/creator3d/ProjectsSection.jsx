@@ -41,12 +41,12 @@ const ALL_PROJECTS = [
     col1Img2: "https://rohaneldhose2008.github.io/ebin-alana/images/couple.jpeg",
     col2Img: "./images/projects/ebinalana.png"
   },
-  // 4. Naomika Digital Brochure
+  // 4. Naomika Design Studio Browser
   {
     id: "p4",
     num: "04",
-    name: "Naomika Digital Brochure",
-    title: "Naomika Luxury Digital Brochure",
+    name: "Naomika Design Studio Browser",
+    title: "Naomika Design Studio Browser",
     url: "https://rohaneldhose2008.github.io/naomikadesignstudio/",
     category: "Digital Brochure",
     col1Img1: "./images/projects/naomika2.png",
@@ -72,7 +72,8 @@ const ALL_PROJECTS = [
     name: "Brown Lights Media",
     title: "Brown Lights Media Kozhikode",
     url: "https://rohaneldhose2008.github.io/v2kozikode/",
-    category: "Luxury Photography & Films",
+    category: "Website Under Creation",
+    isUnderConstruction: true,
     col1Img1: "./images/projects/brownlights.png",
     col1Img2: "https://rohaneldhose2008.github.io/v2kozikode/assets/images/STRIPEGALLERY/5.jpg",
     col2Img: "./images/projects/brownlights.png"
@@ -84,7 +85,8 @@ const ALL_PROJECTS = [
     name: "Naomika Designs Studio",
     title: "Naomika Designs Fashion Studio",
     url: "https://rohaneldhose2008.github.io/naomika_designs_studio/index.html",
-    category: "Fashion Design Studio",
+    category: "Website Under Creation",
+    isUnderConstruction: true,
     col1Img1: "./images/projects/naomika.png",
     col1Img2: "https://rohaneldhose2008.github.io/naomika_designs_studio/images/1.jpeg",
     col2Img: "./images/projects/naomika.png"
@@ -126,6 +128,10 @@ function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, on
 
   const handleOpenSite = (e) => {
     if (e) e.stopPropagation();
+    if (project.isUnderConstruction) {
+      alert('Website Under Creation — This website is currently in progress and will be launching soon!');
+      return;
+    }
     window.open(project.url, '_blank', 'noopener,noreferrer');
   };
 
@@ -163,16 +169,16 @@ function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, on
             </div>
 
             <div className="flex items-center gap-2">
-              <LiveProjectButton
-                label="Live Project"
-                onClick={handleOpenSite}
-              />
-              <button
-                onClick={handleOpenSite}
-                className="px-4 py-2 rounded-full border border-[#D7E2EA]/40 text-xs font-bold text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-black transition-all cursor-pointer"
-              >
-                Open Site ↗
-              </button>
+              {project.isUnderConstruction ? (
+                <span className="px-4 py-2 rounded-full border border-amber-400/40 bg-amber-400/10 text-amber-300 text-xs font-bold uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+                  <span>⏳</span> Website Under Construction
+                </span>
+              ) : (
+                <LiveProjectButton
+                  label="Live Project"
+                  onClick={handleOpenSite}
+                />
+              )}
             </div>
           </div>
 
@@ -207,8 +213,10 @@ function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, on
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="px-5 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider shadow-2xl">
-                  Click to Open {project.name} ↗
+                <span className={`px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider shadow-2xl ${
+                  project.isUnderConstruction ? 'bg-amber-400 text-black' : 'bg-white text-black'
+                }`}>
+                  {project.isUnderConstruction ? 'Website Under Creation ⏳' : `Click to Open ${project.name} ↗`}
                 </span>
               </div>
             </div>

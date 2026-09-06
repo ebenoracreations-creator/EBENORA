@@ -239,11 +239,11 @@ export function ContactModal({ isOpen, onClose }) {
               <span className="truncate">+91 83040 85739</span>
             </a>
             <a
-              href="mailto:hello@ebenoracreations.com"
+              href="mailto:ebenoracreations@gmail.com"
               className="flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-[#BBCCD7]" />
-              <span className="truncate">hello@ebenora</span>
+              <span className="truncate">ebenoracreations@gmail.com</span>
             </a>
             <div className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#BBCCD7]" />

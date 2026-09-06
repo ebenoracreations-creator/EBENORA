@@ -1,6 +1,5 @@
 import React from 'react';
 import FadeIn from './FadeIn';
-import ContactButton from './ContactButton';
 
 export function AboutSection({ onContactClick }) {
   const aboutText =
@@ -112,14 +111,6 @@ export function AboutSection({ onContactClick }) {
             </div>
           </FadeIn>
         </div>
-
-        {/* Contact Button */}
-        <FadeIn delay={0.45} y={20}>
-          <ContactButton
-            onClick={handleContact}
-            label="Start a Project →"
-          />
-        </FadeIn>
       </div>
     </section>
   );

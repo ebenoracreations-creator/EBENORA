@@ -1,7 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
-import ContactButton from './ContactButton';
 
 export function HeroSection({ onNavigate }) {
   const handleNav = (targetId) => {
@@ -99,7 +98,7 @@ export function HeroSection({ onNavigate }) {
       </div>
 
       {/* Bottom Bar (z-30) */}
-      <div className="w-full flex flex-col sm:flex-row justify-between items-center sm:items-end gap-3 sm:gap-4 pb-5 sm:pb-7 md:pb-10 px-5 sm:px-6 md:px-10 z-30">
+      <div className="w-full flex justify-between items-center sm:items-end pb-5 sm:pb-7 md:pb-10 px-5 sm:px-6 md:px-10 z-30">
         <FadeIn delay={0.35} y={20} className="max-w-[320px] sm:max-w-[320px] md:max-w-[380px] text-center sm:text-left">
           <p
             className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug drop-shadow-md"
@@ -107,13 +106,6 @@ export function HeroSection({ onNavigate }) {
           >
             We design brands, build powerful websites, create compelling visuals and help businesses grow through digital experiences that perform.
           </p>
-        </FadeIn>
-
-        <FadeIn delay={0.5} y={20} className="shrink-0">
-          <ContactButton
-            onClick={() => handleNav('contact')}
-            label="Start a Project →"
-          />
         </FadeIn>
       </div>
     </section>

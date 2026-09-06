@@ -87,37 +87,15 @@ export function CreatorPortfolioPage() {
         onContactClick={() => setIsContactOpen(true)}
       />
 
-      {/* CONTACT MODAL */}
+      {/* CONTACT MODAL (Opens only when clicking Start a Project) */}
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
-
-      {/* Floating WhatsApp Quick Action Button */}
-      <div className="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-40 flex items-center group">
-        <a
-          href="https://wa.me/918304085739?text=Hi%20Ebenora%20Creations!%20I'd%20like%20to%20discuss%20a%20creative%20project%20for%20my%20business."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2.5 px-4 py-3 sm:px-5 sm:py-3.5 rounded-full bg-[#0C0C0C]/90 hover:bg-[#141414] border border-[#25D366]/40 hover:border-[#25D366] text-white shadow-[0_10px_30px_rgba(0,0,0,0.8),0_0_20px_rgba(37,211,102,0.25)] backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
-          aria-label="Chat with Ebenora Creations on WhatsApp +91 83040 85739"
-        >
-          <span className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-[#25D366]" />
-          </span>
-          <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-[#25D366]" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-1.127-.066-.27-.087-.614-.207-1.047-.394-1.847-.796-3.04-2.683-3.133-2.806-.092-.123-.746-.991-.746-1.89 0-.899.47-1.342.637-1.524.167-.183.364-.228.486-.228.122 0 .243.002.348.006.113.005.266-.043.415.316.155.373.53 1.29.576 1.383.046.092.076.2.015.321-.061.123-.092.2-.182.308-.091.108-.192.241-.274.324-.092.092-.188.192-.081.376.106.183.473.78 1.014 1.262.698.623 1.287.817 1.47.909.183.092.29.077.397-.046.107-.123.456-.531.578-.714.122-.183.244-.153.41-.092.167.061 1.058.499 1.24.59.182.091.304.137.349.213.046.076.046.442-.098.847z" />
-          </svg>
-          <span className="text-xs font-bold uppercase tracking-wider hidden sm:inline text-[#D7E2EA]">
-            WhatsApp Us
-          </span>
-        </a>
-      </div>
 
       {/* Semantic AI & Search Engine Optimization Content (Screen Reader & Crawler Accessible) */}
       <section className="sr-only" aria-label="Ebenora Creations Studio Overview and Services">
         <h2>About Ebenora Creations — Creative Digital Studio in Kochi, Kerala</h2>
         <p>
           Ebenora Creations is a creative digital design and technology studio located in Kochi, Kerala, India.
-          Our official WhatsApp number is +91 83040 85739 and email is hello@ebenoracreations.com.
+          Our official WhatsApp number is +91 83040 85739 and email is ebenoracreations@gmail.com.
           We provide custom 3D web design, responsive frontend engineering, luxury brand identity,
           digital wedding invitations, digital lookbooks, fashion studio websites, and Generative Engine Optimization (GEO).
         </p>
@@ -126,7 +104,7 @@ export function CreatorPortfolioPage() {
           <li>Double Layer Photography Studio (https://doublelayerphotography.com/)</li>
           <li>Trendy Pearls Australia (https://trendypearls.au/)</li>
           <li>Ebin &amp; Alana Wedding Portal (https://rohaneldhose2008.github.io/ebin-alana/)</li>
-          <li>Naomika Digital Brochure &amp; Fashion Studio (https://rohaneldhose2008.github.io/naomikadesignstudio/)</li>
+          <li>Naomika Design Studio Browser (https://rohaneldhose2008.github.io/naomikadesignstudio/)</li>
           <li>Pictura Australia (https://pictura.au/)</li>
           <li>Brown Lights Media Kozhikode (https://rohaneldhose2008.github.io/v2kozikode/)</li>
           <li>Naomika Designs Fashion Studio (https://rohaneldhose2008.github.io/naomika_designs_studio/index.html)</li>
@@ -144,8 +122,8 @@ export function CreatorPortfolioPage() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs">
-            <a href="mailto:hello@ebenoracreations.com" className="hover:text-white transition-colors">
-              hello@ebenoracreations.com
+            <a href="mailto:ebenoracreations@gmail.com" className="hover:text-white transition-colors">
+              ebenoracreations@gmail.com
             </a>
             <a
               href="https://wa.me/918304085739?text=Hi%20Ebenora%20Creations!%20I'd%20like%20to%20discuss%20a%20project."

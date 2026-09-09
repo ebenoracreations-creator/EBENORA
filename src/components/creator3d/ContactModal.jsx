@@ -40,7 +40,7 @@ export function ContactModal({ isOpen, onClose }) {
 ⏱️ *Timeline:* ${selectedTimeline}
 📝 *Project Scope:* ${details.trim() || 'Ready to discuss details over WhatsApp.'}
 
-🌐 *Sent via ebenoracreation.com*`;
+🌐 *Sent via ebenoracreations.com*`;
 
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/918304085739?text=${encodedText}`;

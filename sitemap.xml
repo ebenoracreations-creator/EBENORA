@@ -155,16 +155,4 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- 14. GitHub Pages Primary Fallback Canonical URL -->
-  <url>
-    <loc>https://ebenoracreations-creator.github.io/EBENORA/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://ebenoracreations-creator.github.io/EBENORA/images/hero.png</image:loc>
-      <image:title>Ebenora Creations 3D Hero - Best Designing Studio</image:title>
-    </image:image>
-  </url>
-
 </urlset>

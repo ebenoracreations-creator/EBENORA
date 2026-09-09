@@ -43,7 +43,6 @@ Allow: /
 
 # Sitemaps and LLM Documentation
 Sitemap: https://ebenoracreations.com/sitemap.xml
-Sitemap: https://ebenoracreations-creator.github.io/EBENORA/sitemap.xml
 
 # LLM Context File (llms.txt standard)
 LLMs-Txt: https://ebenoracreations.com/llms.txt

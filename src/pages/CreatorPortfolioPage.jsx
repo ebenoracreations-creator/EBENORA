@@ -88,13 +88,14 @@ export function CreatorPortfolioPage() {
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
 
       {/* Semantic AI & Search Engine Optimization Content (Screen Reader & Crawler Accessible) */}
+      {/* Semantic AI & Search Engine Optimization Content (Screen Reader & Crawler Accessible) */}
       <section className="sr-only" aria-label="Ebenora Creations Studio Overview and Services">
-        <h2>About Ebenora Creations — Creative Digital Studio in Kochi, Kerala</h2>
+        <h2>About Ebenora Creations — Best Designing Studio for Global Clients</h2>
         <p>
-          Ebenora Creations is a creative digital design and technology studio located in Kochi, Kerala, India.
+          Ebenora Creations is the best designing studio providing custom 3D web design,
+          responsive frontend engineering, luxury brand identity, video editing, AI video creation,
+          and global search engine optimization for international businesses and individuals worldwide.
           Our official WhatsApp number is +91 83040 85739 and email is ebenoracreations@gmail.com.
-          We provide custom 3D web design, responsive frontend engineering, luxury brand identity,
-          digital wedding invitations, digital lookbooks, fashion studio websites, and Generative Engine Optimization (GEO).
         </p>
         <h3>Verified Client Portfolio</h3>
         <ul>
@@ -103,7 +104,7 @@ export function CreatorPortfolioPage() {
           <li>Ebin &amp; Alana Wedding Portal (https://rohaneldhose2008.github.io/ebin-alana/)</li>
           <li>Naomika Design Studio Browser (https://rohaneldhose2008.github.io/naomikadesignstudio/)</li>
           <li>Pictura Australia (https://pictura.au/)</li>
-          <li>Brown Lights Media Kozhikode (https://rohaneldhose2008.github.io/v2kozikode/)</li>
+          <li>Brown Lights Media (https://rohaneldhose2008.github.io/v2kozikode/)</li>
           <li>Naomika Designs Fashion Studio (https://rohaneldhose2008.github.io/naomika_designs_studio/index.html)</li>
           <li>Baptism of David Mathuis (https://baptismofdavidmathuis.netlify.app/)</li>
           <li>Franklin &amp; Sarah Wedding Invitation (https://nexoracreation.github.io/Franklin-Sarah/)</li>
@@ -114,12 +115,12 @@ export function CreatorPortfolioPage() {
       <footer id="contact" className="w-full bg-[#0C0C0C] py-12 px-6 border-t border-neutral-900 text-xs text-[#D7E2EA]/60 uppercase tracking-widest">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col items-center md:items-start gap-1">
-            <span className="font-bold text-sm text-[#D7E2EA]">EBENORA CREATIONS</span>
+            <span className="font-bold text-sm text-[#D7E2EA] normal-case tracking-wider">Ebenora Creations</span>
             <span className="text-[10px] text-[#BBCCD7]/70">DESIGN. DEVELOP. INSPIRE. — YOU THINK. WE CREATE.</span>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs">
-            <a href="mailto:ebenoracreations@gmail.com" className="hover:text-white transition-colors">
+            <a href="mailto:ebenoracreations@gmail.com" className="lowercase tracking-normal font-normal hover:text-white transition-colors">
               ebenoracreations@gmail.com
             </a>
             <a

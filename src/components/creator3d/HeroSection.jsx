@@ -1,6 +1,5 @@
 import React from 'react';
 import FadeIn from './FadeIn';
-import Magnet from './Magnet';
 
 export function HeroSection({ onNavigate }) {
   const handleNav = (targetId) => {
@@ -14,10 +13,58 @@ export function HeroSection({ onNavigate }) {
 
   return (
     <section className="h-[100dvh] min-h-[640px] w-full max-w-[100vw] flex flex-col justify-between relative overflow-hidden bg-[#0C0C0C] select-none">
+      {/* 3-Line Massive Kinetic Services Marquee Running in Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 flex flex-col justify-center gap-1 sm:gap-2 md:gap-3 select-none opacity-90">
+        {/* Line 1 - Moving Left */}
+        <div className="overflow-hidden w-full whitespace-nowrap">
+          <div className="flex w-max animate-marquee-left">
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
+            </span>
+          </div>
+        </div>
+
+        {/* Line 2 - Moving Right */}
+        <div className="overflow-hidden w-full whitespace-nowrap">
+          <div className="flex w-max animate-marquee-right">
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
+            </span>
+          </div>
+        </div>
+
+        {/* Line 3 - Moving Left */}
+        <div className="overflow-hidden w-full whitespace-nowrap">
+          <div className="flex w-max animate-marquee-left">
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
+              Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* Ambient Spotlight Glow Behind 3D Character */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[520px] md:w-[750px] lg:w-[900px] h-[340px] sm:h-[520px] md:h-[750px] bg-[radial-gradient(circle_at_center,rgba(182,0,168,0.35)_0%,rgba(118,33,176,0.18)_45%,transparent_70%)] pointer-events-none z-0 blur-3xl" />
 
-      {/* Navbar: About -> Projects -> Services -> Contact */}
+      {/* Navbar: About -> Services -> Projects -> Contact */}
       <FadeIn delay={0} y={-20} className="w-full z-30">
         <nav className="w-full max-w-full flex items-center justify-between px-3 sm:px-6 md:px-10 pt-4 sm:pt-6 md:pt-8 gap-1 sm:gap-2">
           <button
@@ -59,27 +106,20 @@ export function HeroSection({ onNavigate }) {
             hi, i&apos;m ebenora
           </h1>
           <span className="sr-only">
-            Creative Digital Studio in Kochi, Kerala — Web Design, Branding, Graphic Design, Video & SEO
+            Best Designing Studio — Global Web Design, 3D Web & Luxury Branding for Clients Worldwide
           </span>
         </FadeIn>
       </div>
 
-      {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10) */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[360px] sm:max-w-[440px] md:max-w-[620px] lg:max-w-[720px] xl:max-w-[800px] top-[18%] sm:top-[18%] md:top-auto md:bottom-24 lg:bottom-28 pointer-events-auto flex justify-center items-start md:items-end">
+      {/* Hero Portrait Layer 2: Fixed 3D Character (Anchored & Fixed in place, z-10) */}
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[360px] sm:max-w-[440px] md:max-w-[620px] lg:max-w-[720px] xl:max-w-[800px] top-[18%] sm:top-[18%] md:top-auto md:bottom-20 lg:bottom-24 pointer-events-none flex justify-center items-start md:items-end">
         <FadeIn delay={0.35} y={30} className="w-full flex justify-center items-start md:items-end">
-          <Magnet
-            strength={4}
-            activeTransition="transform 0.2s ease-out"
-            inactiveTransition="transform 0.5s ease-out"
-            className="w-full flex justify-center items-start md:items-end cursor-grab active:cursor-grabbing"
-          >
-            <img
-              src="./images/hero.png"
-              alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero"
-              className="w-full h-auto max-h-[48vh] sm:max-h-[52vh] md:max-h-[63vh] lg:max-h-[67vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
-              loading="eager"
-            />
-          </Magnet>
+          <img
+            src="./images/hero.png"
+            alt="Best Designing Studio - Ebenora Creations 3D Hero"
+            className="w-full h-auto max-h-[48vh] sm:max-h-[52vh] md:max-h-[63vh] lg:max-h-[67vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
+            loading="eager"
+          />
         </FadeIn>
       </div>
 
@@ -101,12 +141,12 @@ export function HeroSection({ onNavigate }) {
 
       {/* Bottom Bar (z-30) */}
       <div className="w-full flex flex-col md:flex-row items-center md:items-end justify-between pb-6 sm:pb-7 md:pb-8 px-6 sm:px-8 md:px-12 z-30 pointer-events-none gap-4 md:gap-8">
-        {/* Logo: Left on desktop, centered on mobile */}
+        {/* Logo: Left on desktop, centered on mobile - ENLARGED SIZE */}
         <FadeIn delay={0.35} y={20} className="flex justify-center md:justify-start items-center shrink-0 pointer-events-auto">
           <img
             src="./images/logo.png"
             alt="Ebenora Creations Logo"
-            className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-105"
+            className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[200px] sm:max-w-[260px] md:max-w-[320px] object-contain drop-shadow-[0_6px_24px_rgba(0,0,0,0.9)] transition-transform duration-300 hover:scale-105"
           />
         </FadeIn>
 

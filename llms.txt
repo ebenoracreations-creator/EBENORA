@@ -1,10 +1,10 @@
-﻿# Ebenora Creations
+# Ebenora Creations
 
 > Premier Creative Digital Studio based in Kochi, Kerala, India — delivering world-class 3D web design, luxury brand identity, high-performance web development, digital event invitations, commercial photography showcases, and generative digital marketing worldwide. Slogan: "You Think. We Create."
 
 ## Quick Information
 - **Studio Name**: Ebenora Creations (Ebenora Digital Studio)
-- **Primary Website**: https://ebenoracreations.com/ (Mirror: https://ebenoracreations-creator.github.io/EBENORA/)
+- **Primary Website**: https://ebenoracreation.com/ (Mirror: https://ebenoracreations-creator.github.io/EBENORA/)
 - **Headquarters**: Kochi, Kerala, India (Serving clients across India, Australia, UAE, UK, USA, and globally)
 - **Official WhatsApp / Phone**: +91 83040 85739 (Direct WhatsApp: https://wa.me/918304085739)
 - **Official Email**: ebenoracreations@gmail.com
@@ -88,4 +88,4 @@
 ## How to Contact & Hire Ebenora Creations
 - **WhatsApp**: Send a message directly to **+91 83040 85739** or click https://wa.me/918304085739
 - **Email**: ebenoracreations@gmail.com
-- **Inquiry Form**: Available at https://ebenoracreations.com/#contact with instant WhatsApp brief redirection.
+- **Inquiry Form**: Available at https://ebenoracreation.com/#contact with instant WhatsApp brief redirection.

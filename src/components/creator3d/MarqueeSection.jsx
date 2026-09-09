@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const REAL_PROJECTS = [
   {
@@ -69,9 +70,22 @@ const REAL_PROJECTS = [
 ];
 
 export function MarqueeSection() {
+  const row1Ref = useRef(null);
+  const row2Ref = useRef(null);
+
   const row1Items = [...REAL_PROJECTS, ...REAL_PROJECTS, ...REAL_PROJECTS];
   const row2Items = [...REAL_PROJECTS].reverse();
   const row2Tripled = [...row2Items, ...row2Items, ...row2Items];
+
+  const handleSlideLeft = () => {
+    if (row1Ref.current) row1Ref.current.scrollBy({ left: -450, behavior: 'smooth' });
+    if (row2Ref.current) row2Ref.current.scrollBy({ left: -450, behavior: 'smooth' });
+  };
+
+  const handleSlideRight = () => {
+    if (row1Ref.current) row1Ref.current.scrollBy({ left: 450, behavior: 'smooth' });
+    if (row2Ref.current) row2Ref.current.scrollBy({ left: 450, behavior: 'smooth' });
+  };
 
   const handleTileClick = (item) => {
     if (item.isUnderConstruction) {
@@ -83,17 +97,46 @@ export function MarqueeSection() {
 
   return (
     <section className="bg-[#0C0C0C] pt-24 sm:pt-32 md:pt-40 pb-12 overflow-hidden w-full select-none">
-      {/* Title */}
-      <div className="max-w-6xl mx-auto px-6 mb-10 text-center">
-        <h3 className="hero-heading text-3xl sm:text-5xl font-black uppercase tracking-tight">
-          Project Showcase
-        </h3>
+      {/* Title & Slide Controls */}
+      <div className="max-w-6xl mx-auto px-6 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-center sm:text-left">
+          <h3 className="hero-heading text-3xl sm:text-5xl font-black uppercase tracking-tight">
+            Project Showcase
+          </h3>
+          <p className="text-xs uppercase tracking-widest text-[#BBCCD7] mt-1">
+            Hover to view details • Slide left or right to explore
+          </p>
+        </div>
+
+        {/* Slide Controls */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handleSlideLeft}
+            aria-label="Slide Left"
+            className="p-3 rounded-full border border-white/20 bg-white/5 hover:bg-white hover:text-black text-white transition-all shadow-lg active:scale-90 cursor-pointer"
+            title="Slide Left"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button
+            onClick={handleSlideRight}
+            aria-label="Slide Right"
+            className="p-3 rounded-full border border-white/20 bg-white/5 hover:bg-white hover:text-black text-white transition-all shadow-lg active:scale-90 cursor-pointer"
+            title="Slide Right"
+          >
+            <ChevronRight size={20} />
+          </button>
+        </div>
       </div>
 
       <div className="flex flex-col gap-6 w-full">
         {/* Row 1 - AUTOMATIC CONTINUOUS INFINITE LOOP (LEFT) */}
-        <div className="overflow-hidden w-full relative">
-          <div className="flex gap-5 w-max animate-marquee-left">
+        <div
+          ref={row1Ref}
+          className="overflow-x-auto scrollbar-none w-full relative cursor-grab active:cursor-grabbing"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          <div className="flex gap-5 w-max animate-marquee-left hover:[animation-play-state:paused]">
             {row1Items.map((item, index) => (
               <div
                 key={`r1-${index}`}
@@ -108,8 +151,8 @@ export function MarqueeSection() {
                   loading="lazy"
                 />
 
-                {/* Details Overlay: ALWAYS VISIBLE AS REQUESTED */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent flex flex-col justify-end p-4 sm:p-5 text-left pointer-events-none">
+                {/* Details Overlay: VISIBLE ONLY ON HOVER */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent flex flex-col justify-end p-4 sm:p-5 text-left pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-[10px] sm:text-xs uppercase font-mono font-bold text-[#BBCCD7] tracking-wider">
                     {item.category}
                   </span>
@@ -134,8 +177,12 @@ export function MarqueeSection() {
         </div>
 
         {/* Row 2 - AUTOMATIC CONTINUOUS INFINITE LOOP (RIGHT) */}
-        <div className="overflow-hidden w-full relative">
-          <div className="flex gap-5 w-max animate-marquee-right">
+        <div
+          ref={row2Ref}
+          className="overflow-x-auto scrollbar-none w-full relative cursor-grab active:cursor-grabbing"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          <div className="flex gap-5 w-max animate-marquee-right hover:[animation-play-state:paused]">
             {row2Tripled.map((item, index) => (
               <div
                 key={`r2-${index}`}
@@ -150,8 +197,8 @@ export function MarqueeSection() {
                   loading="lazy"
                 />
 
-                {/* Details Overlay: ALWAYS VISIBLE AS REQUESTED */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent flex flex-col justify-end p-4 sm:p-5 text-left pointer-events-none">
+                {/* Details Overlay: VISIBLE ONLY ON HOVER */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent flex flex-col justify-end p-4 sm:p-5 text-left pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-[10px] sm:text-xs uppercase font-mono font-bold text-[#BBCCD7] tracking-wider">
                     {item.category}
                   </span>

@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import FadeIn from './FadeIn';
 import LiveProjectButton from './LiveProjectButton';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const ALL_PROJECTS = [
   // 1. Double Layer Photography
@@ -117,7 +116,7 @@ const ALL_PROJECTS = [
   }
 ];
 
-function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, onToggleShowAll }) {
+function Card({ project, index, totalCards, scrollYProgress }) {
   const containerRef = useRef(null);
   
   // Consistent subtle scale for perfectly uniform cards
@@ -222,66 +221,26 @@ function Card({ project, index, totalCards, scrollYProgress, isLast, showAll, on
             </div>
           </div>
         </motion.div>
-
-        {/* Pill button centered across the bottom border of the last card */}
-        {isLast && (
-          <div
-            style={{
-              top: `calc(100% + ${index * 12}px - 22px)`
-            }}
-            className="absolute left-1/2 -translate-x-1/2 z-40 pointer-events-auto"
-          >
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onToggleShowAll();
-              }}
-              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border border-[#D7E2EA]/40 bg-[#0C0C0C] text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-black transition-all cursor-pointer shadow-2xl flex items-center gap-2 hover:scale-105 active:scale-95 whitespace-nowrap"
-            >
-              {showAll ? (
-                <>
-                  LESS PROJECTS <ChevronUp className="w-3.5 h-3.5" />
-                </>
-              ) : (
-                <>
-                  MORE PROJECTS <ChevronDown className="w-3.5 h-3.5" />
-                </>
-              )}
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );
 }
 
 export function ProjectsSection() {
-  const [showAll, setShowAll] = useState(false);
   const containerRef = useRef(null);
-
-  const displayedProjects = showAll ? ALL_PROJECTS : ALL_PROJECTS.slice(0, 4);
+  const displayedProjects = ALL_PROJECTS;
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end end']
   });
 
-  const handleToggle = () => {
-    if (showAll) {
-      setShowAll(false);
-      const el = document.getElementById('projects');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      setShowAll(true);
-    }
-  };
-
   return (
     <section
       id="projects"
       ref={containerRef}
-      style={{ minHeight: showAll ? '750vh' : '340vh' }}
-      className="bg-[#0C0C0C] text-[#D7E2EA] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-10 px-4 sm:px-6 md:px-10 pt-16 pb-32 select-none transition-[min-height] duration-500"
+      style={{ minHeight: '750vh' }}
+      className="bg-[#0C0C0C] text-[#D7E2EA] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-10 px-4 sm:px-6 md:px-10 pt-16 pb-32 select-none"
     >
       {/* Heading */}
       <FadeIn delay={0} y={40} className="w-full mb-12 sm:mb-16 md:mb-20 text-center">
@@ -293,7 +252,7 @@ export function ProjectsSection() {
         </h2>
       </FadeIn>
 
-      {/* Cards Stack (Overlapping Card Animation) */}
+      {/* Cards Stack (Overlapping Card Animation for all 9 projects) */}
       <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center">
         {displayedProjects.map((project, index) => (
           <Card
@@ -302,9 +261,6 @@ export function ProjectsSection() {
             index={index}
             totalCards={displayedProjects.length}
             scrollYProgress={scrollYProgress}
-            isLast={index === displayedProjects.length - 1}
-            showAll={showAll}
-            onToggleShowAll={handleToggle}
           />
         ))}
       </div>

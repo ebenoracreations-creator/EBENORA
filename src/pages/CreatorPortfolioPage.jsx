@@ -46,11 +46,11 @@ export function CreatorPortfolioPage() {
       {/* 3. ABOUT SECTION */}
       <AboutSection onContactClick={() => setIsContactOpen(true)} />
 
-      {/* 4. PROJECTS SECTION */}
-      <ProjectsSection onSelectProject={(proj) => setSelectedPreviewProject(proj)} />
-
-      {/* 5. SERVICES SECTION (All 7 Services Included) */}
+      {/* 4. SERVICES SECTION (All Services Included) */}
       <ServicesSection />
+
+      {/* 5. PROJECTS SECTION (All 9 Projects Stacked) */}
+      <ProjectsSection onSelectProject={(proj) => setSelectedPreviewProject(proj)} />
 
       {/* CALL TO ACTION BANNER */}
       <section className="w-full bg-[#18011F] text-white py-20 px-6 text-center border-t border-[#B600A8]/30 relative overflow-hidden">

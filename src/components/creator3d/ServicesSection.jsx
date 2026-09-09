@@ -64,9 +64,57 @@ export function ServicesSection() {
   return (
     <section
       id="services"
-      className="bg-[#FFFFFF] text-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 w-full relative z-0 select-none"
+      className="bg-[#FFFFFF] text-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 w-full relative z-0 select-none overflow-hidden"
     >
-      <div className="max-w-5xl mx-auto flex flex-col items-center">
+      {/* 3-Line Subtle Background Marquee Running on a Loop */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 flex flex-col justify-around py-8 select-none">
+        {/* Line 1 - Moving Left */}
+        <div className="overflow-hidden w-full whitespace-nowrap">
+          <div className="flex w-max animate-marquee-left">
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
+            </span>
+          </div>
+        </div>
+
+        {/* Line 2 - Moving Right */}
+        <div className="overflow-hidden w-full whitespace-nowrap">
+          <div className="flex w-max animate-marquee-right">
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
+            </span>
+          </div>
+        </div>
+
+        {/* Line 3 - Moving Left */}
+        <div className="overflow-hidden w-full whitespace-nowrap">
+          <div className="flex w-max animate-marquee-left">
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
+            </span>
+            <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight text-black/[0.045] mr-8">
+              Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
         {/* Heading */}
         <FadeIn delay={0} y={40} className="w-full mb-16 sm:mb-20 md:mb-28 text-center">
           <h2

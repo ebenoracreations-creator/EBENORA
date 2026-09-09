@@ -27,16 +27,16 @@ export function HeroSection({ onNavigate }) {
             About
           </button>
           <button
-            onClick={() => handleNav('projects')}
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-[11px] sm:text-base md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 bg-transparent border-none cursor-pointer"
-          >
-            Projects
-          </button>
-          <button
             onClick={() => handleNav('services')}
             className="text-[#D7E2EA] font-medium uppercase tracking-wider text-[11px] sm:text-base md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 bg-transparent border-none cursor-pointer"
           >
             Services
+          </button>
+          <button
+            onClick={() => handleNav('projects')}
+            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-[11px] sm:text-base md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 bg-transparent border-none cursor-pointer"
+          >
+            Projects
           </button>
           <button
             onClick={() => handleNav('contact')}
@@ -65,7 +65,7 @@ export function HeroSection({ onNavigate }) {
       </div>
 
       {/* Hero Portrait Layer 2: Highlighted & Scaled 3D Character (z-10) */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[360px] sm:max-w-[440px] md:max-w-[640px] lg:max-w-[760px] xl:max-w-[840px] top-[19%] sm:top-[20%] md:top-auto md:bottom-0 pointer-events-auto flex justify-center items-start md:items-end">
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[360px] sm:max-w-[440px] md:max-w-[620px] lg:max-w-[720px] xl:max-w-[800px] top-[18%] sm:top-[18%] md:top-auto md:bottom-24 lg:bottom-28 pointer-events-auto flex justify-center items-start md:items-end">
         <FadeIn delay={0.35} y={30} className="w-full flex justify-center items-start md:items-end">
           <Magnet
             strength={4}
@@ -76,7 +76,7 @@ export function HeroSection({ onNavigate }) {
             <img
               src="./images/hero.png"
               alt="Creative Digital Studio in Kochi, Kerala - Ebenora Creations 3D Hero"
-              className="w-full h-auto max-h-[49vh] sm:max-h-[54vh] md:max-h-[82vh] lg:max-h-[86vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
+              className="w-full h-auto max-h-[48vh] sm:max-h-[52vh] md:max-h-[63vh] lg:max-h-[67vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
               loading="eager"
             />
           </Magnet>
@@ -100,11 +100,21 @@ export function HeroSection({ onNavigate }) {
       </div>
 
       {/* Bottom Bar (z-30) */}
-      <div className="w-full flex justify-between items-center sm:items-end pb-5 sm:pb-7 md:pb-10 px-5 sm:px-6 md:px-10 z-30">
-        <FadeIn delay={0.35} y={20} className="max-w-[320px] sm:max-w-[320px] md:max-w-[380px] text-center sm:text-left">
+      <div className="w-full flex flex-col md:flex-row items-center md:items-end justify-between pb-6 sm:pb-7 md:pb-8 px-6 sm:px-8 md:px-12 z-30 pointer-events-none gap-4 md:gap-8">
+        {/* Logo: Left on desktop, centered on mobile */}
+        <FadeIn delay={0.35} y={20} className="flex justify-center md:justify-start items-center shrink-0 pointer-events-auto">
+          <img
+            src="./images/logo.png"
+            alt="Ebenora Creations Logo"
+            className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-105"
+          />
+        </FadeIn>
+
+        {/* Tagline: Right on desktop (right-aligned), centered on mobile */}
+        <FadeIn delay={0.35} y={20} className="max-w-[340px] sm:max-w-[440px] md:max-w-[460px] lg:max-w-[560px] flex justify-center md:justify-end text-center md:text-right">
           <p
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug drop-shadow-md"
-            style={{ fontSize: 'clamp(0.62rem, 1.05vw, 1.15rem)' }}
+            className="text-[#D7E2EA] font-medium uppercase tracking-wider leading-relaxed text-center md:text-right drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]"
+            style={{ fontSize: 'clamp(0.78rem, 1.1vw, 1.05rem)' }}
           >
             We design brands, build powerful websites, create compelling visuals and help businesses grow through digital experiences that perform.
           </p>

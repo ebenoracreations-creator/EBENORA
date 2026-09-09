@@ -56,9 +56,15 @@ body {
   animation-play-state: paused;
 }
 
-/* Unified Hero Marquee - All lines at identical synchronized slow speed */
-.hero-marquee-track {
+/* Unified Hero Marquee - Left & Right at identical synchronized slow speed (80s) */
+.hero-marquee-track-left {
   animation: marquee-left 80s linear infinite !important;
+  will-change: transform;
+  pointer-events: none !important;
+}
+
+.hero-marquee-track-right {
+  animation: marquee-right 80s linear infinite !important;
   will-change: transform;
   pointer-events: none !important;
 }

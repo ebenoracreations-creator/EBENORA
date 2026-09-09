@@ -15,9 +15,9 @@ export function HeroSection({ onNavigate }) {
     <section className="h-[100dvh] min-h-[640px] w-full max-w-[100vw] flex flex-col justify-between relative overflow-hidden bg-[#0C0C0C] select-none">
       {/* 3-Line Massive Kinetic Services Marquee Running in Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 flex flex-col justify-center gap-1 sm:gap-2 md:gap-3 select-none opacity-90">
-        {/* Line 1 - Moving Left at Unified Speed */}
+        {/* Line 1 - Moving Left */}
         <div className="overflow-hidden w-full whitespace-nowrap">
-          <div className="flex w-max hero-marquee-track">
+          <div className="flex w-max hero-marquee-track-left">
             <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
               Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
             </span>
@@ -30,9 +30,9 @@ export function HeroSection({ onNavigate }) {
           </div>
         </div>
 
-        {/* Line 2 - Moving Left at Unified Speed */}
+        {/* Line 2 - Moving Right */}
         <div className="overflow-hidden w-full whitespace-nowrap">
-          <div className="flex w-max hero-marquee-track">
+          <div className="flex w-max hero-marquee-track-right">
             <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
               AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
             </span>
@@ -45,9 +45,9 @@ export function HeroSection({ onNavigate }) {
           </div>
         </div>
 
-        {/* Line 3 - Moving Left at Unified Speed */}
+        {/* Line 3 - Moving Left */}
         <div className="overflow-hidden w-full whitespace-nowrap">
-          <div className="flex w-max hero-marquee-track">
+          <div className="flex w-max hero-marquee-track-left">
             <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
               Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
             </span>
@@ -111,13 +111,13 @@ export function HeroSection({ onNavigate }) {
         </FadeIn>
       </div>
 
-      {/* Hero Portrait Layer 2: Fixed 3D Character (Anchored & Fixed in place, z-10) */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[94vw] max-w-[360px] sm:max-w-[440px] md:max-w-[620px] lg:max-w-[720px] xl:max-w-[800px] top-[18%] sm:top-[18%] md:top-auto md:bottom-20 lg:bottom-24 pointer-events-none flex justify-center items-start md:items-end">
+      {/* Hero Portrait Layer 2: Fixed 3D Character Mascot (Enlarged & Grounded, z-10) */}
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[96vw] max-w-[440px] sm:max-w-[540px] md:max-w-[740px] lg:max-w-[860px] xl:max-w-[960px] top-[16%] sm:top-[16%] md:top-auto md:bottom-14 lg:bottom-16 pointer-events-none flex justify-center items-start md:items-end">
         <FadeIn delay={0.35} y={30} className="w-full flex justify-center items-start md:items-end">
           <img
             src="./images/hero.png"
             alt="Best Designing Studio - Ebenora Creations 3D Hero"
-            className="w-full h-auto max-h-[48vh] sm:max-h-[52vh] md:max-h-[63vh] lg:max-h-[67vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
+            className="w-full h-auto max-h-[54vh] sm:max-h-[60vh] md:max-h-[72vh] lg:max-h-[78vh] xl:max-h-[82vh] object-contain object-top md:object-bottom drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-[104%] brightness-[105%]"
             loading="eager"
           />
         </FadeIn>

@@ -15,9 +15,9 @@ export function HeroSection({ onNavigate }) {
     <section className="h-[100dvh] min-h-[640px] w-full max-w-[100vw] flex flex-col justify-between relative overflow-hidden bg-[#0C0C0C] select-none">
       {/* 3-Line Massive Kinetic Services Marquee Running in Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 flex flex-col justify-center gap-1 sm:gap-2 md:gap-3 select-none opacity-90">
-        {/* Line 1 - Moving Left */}
+        {/* Line 1 - Moving Left at Unified Speed */}
         <div className="overflow-hidden w-full whitespace-nowrap">
-          <div className="flex w-max animate-marquee-left">
+          <div className="flex w-max hero-marquee-track">
             <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
               Web Designing • Development • Web Development • Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing •&nbsp;
             </span>
@@ -30,9 +30,9 @@ export function HeroSection({ onNavigate }) {
           </div>
         </div>
 
-        {/* Line 2 - Moving Right */}
+        {/* Line 2 - Moving Left at Unified Speed */}
         <div className="overflow-hidden w-full whitespace-nowrap">
-          <div className="flex w-max animate-marquee-right">
+          <div className="flex w-max hero-marquee-track">
             <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
               AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development • Graphic Designing • Video Editing •&nbsp;
             </span>
@@ -45,9 +45,9 @@ export function HeroSection({ onNavigate }) {
           </div>
         </div>
 
-        {/* Line 3 - Moving Left */}
+        {/* Line 3 - Moving Left at Unified Speed */}
         <div className="overflow-hidden w-full whitespace-nowrap">
-          <div className="flex w-max animate-marquee-left">
+          <div className="flex w-max hero-marquee-track">
             <span className="font-black text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] uppercase tracking-tighter text-white/[0.04] mr-8 leading-[0.85]">
               Graphic Designing • Video Editing • AI Video Creations • SEO • Digital Marketing • Web Designing • Development • Web Development •&nbsp;
             </span>

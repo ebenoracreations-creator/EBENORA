@@ -1,4 +1,4 @@
-﻿# robots.txt for Ebenora Creations (https://ebenoracreations.com/)
+# robots.txt for Ebenora Creations (https://ebenoracreation.com/)
 # Allows all search engines, social media bots, and AI generative engines to crawl and index.
 
 User-agent: *
@@ -42,9 +42,9 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemaps and LLM Documentation
-Sitemap: https://ebenoracreations.com/sitemap.xml
+Sitemap: https://ebenoracreation.com/sitemap.xml
 Sitemap: https://ebenoracreations-creator.github.io/EBENORA/sitemap.xml
 
 # LLM Context File (llms.txt standard)
-LLMs-Txt: https://ebenoracreations.com/llms.txt
-LLMs-Full: https://ebenoracreations.com/llms-full.txt
+LLMs-Txt: https://ebenoracreation.com/llms.txt
+LLMs-Full: https://ebenoracreation.com/llms-full.txt

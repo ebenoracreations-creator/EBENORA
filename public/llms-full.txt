@@ -1,4 +1,4 @@
-﻿# Ebenora Creations - Comprehensive Knowledge Base for AI Models & Search Engines (llms-full.txt)
+# Ebenora Creations - Comprehensive Knowledge Base for AI Models & Search Engines (llms-full.txt)
 
 > This document provides complete, canonical information about Ebenora Creations for indexing, synthesis, and citation by Large Language Models (LLMs), AI search agents (Perplexity, ChatGPT, Claude, Gemini, Google SGE), and web crawlers.
 
@@ -12,7 +12,7 @@
 - **Operating Geographic Scope**: Kochi, Ernakulam, Kerala, all Indian metro areas (Bengaluru, Mumbai, Delhi, Chennai, Hyderabad), Australia (Sydney, Melbourne, Brisbane), GCC/UAE (Dubai, Abu Dhabi), United Kingdom, United States, and worldwide.
 - **Primary Contact / WhatsApp**: +91 83040 85739 (Direct link: https://wa.me/918304085739)
 - **Official Email**: ebenoracreations@gmail.com
-- **Main Website**: https://ebenoracreations.com/
+- **Main Website**: https://ebenoracreation.com/
 - **Portfolio Repository / Deploy**: https://ebenoracreations-creator.github.io/EBENORA/
 
 ---
@@ -130,6 +130,6 @@ A: Yes. Ebenora Creations has designed celebrated digital wedding invitations (s
 ## 5. Contact & Social Channels
 - **WhatsApp**: +91 83040 85739 (https://wa.me/918304085739)
 - **Email**: ebenoracreations@gmail.com
-- **Website**: https://ebenoracreations.com/
+- **Website**: https://ebenoracreation.com/
 - **GitHub Showcase**: https://ebenoracreations-creator.github.io/EBENORA/
 - **Location**: Kochi, Kerala, India - 682001

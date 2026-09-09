@@ -2,34 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
-  <!-- Homepage & Main 3D Creator Experience -->
+  <!-- 1. Primary Homepage & 3D Creator Experience -->
   <url>
     <loc>https://ebenoracreations.com/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://ebenoracreations.com/images/hero.png</image:loc>
-      <image:title>Ebenora Creations 3D Hero - Creative Digital Studio in Kochi, Kerala</image:title>
+      <image:title>Ebenora Creations 3D Hero - Best Designing Studio</image:title>
+      <image:caption>Interactive 3D Web &amp; Luxury Branding Studio for Global Clients</image:caption>
     </image:image>
-  </url>
-
-  <!-- GitHub Pages Primary Canonical URL -->
-  <url>
-    <loc>https://ebenoracreations-creator.github.io/EBENORA/</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
     <image:image>
-      <image:loc>https://ebenoracreations-creator.github.io/EBENORA/images/hero.png</image:loc>
-      <image:title>Ebenora Creations 3D Hero</image:title>
+      <image:loc>https://ebenoracreations.com/images/logo.png</image:loc>
+      <image:title>Ebenora Creations Official Studio Brand Logo</image:title>
     </image:image>
   </url>
 
-  <!-- Projects Showcase Section -->
+  <!-- 2. 3D Creator Studio Page -->
   <url>
-    <loc>https://ebenoracreations.com/#projects</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://ebenoracreations.com/3d-creator</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ebenoracreations.com/images/hero.png</image:loc>
+      <image:title>3D Creator Studio Experience</image:title>
+    </image:image>
+  </url>
+
+  <!-- 3. About Ebenora Creations -->
+  <url>
+    <loc>https://ebenoracreations.com/about</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 4. Global Services Overview -->
+  <url>
+    <loc>https://ebenoracreations.com/services</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 5. Service: Luxury Branding & Identity -->
+  <url>
+    <loc>https://ebenoracreations.com/services/branding</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 6. Service: High-Performance Web Development -->
+  <url>
+    <loc>https://ebenoracreations.com/services/web-development</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 7. Service: Global SEO & GEO (Generative Engine Optimization) -->
+  <url>
+    <loc>https://ebenoracreations.com/services/seo</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 8. Service: Social Media Strategy & Content Creation -->
+  <url>
+    <loc>https://ebenoracreations.com/services/social-media</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 9. Service: Custom Solutions & Enterprise Architecture -->
+  <url>
+    <loc>https://ebenoracreations.com/services/custom-solutions</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 10. Portfolio Showcase (with Google Image Indexing) -->
+  <url>
+    <loc>https://ebenoracreations.com/portfolio</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -54,7 +115,7 @@
     </image:image>
     <image:image>
       <image:loc>https://ebenoracreations.com/images/projects/brownlights.png</image:loc>
-      <image:title>Brown Lights Media Kozhikode Photography</image:title>
+      <image:title>Brown Lights Media Commercial Photography</image:title>
     </image:image>
     <image:image>
       <image:loc>https://ebenoracreations.com/images/projects/naomika.png</image:loc>
@@ -70,27 +131,40 @@
     </image:image>
   </url>
 
-  <!-- Services Section -->
+  <!-- 11. Packages & Pricing -->
   <url>
-    <loc>https://ebenoracreations.com/#services</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- About Section -->
-  <url>
-    <loc>https://ebenoracreations.com/#about</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://ebenoracreations.com/packages</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Contact & WhatsApp Inquiry -->
+  <!-- 12. Blog & Industry Insights -->
   <url>
-    <loc>https://ebenoracreations.com/#contact</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://ebenoracreations.com/blog</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 13. Contact & Direct WhatsApp Inquiries -->
+  <url>
+    <loc>https://ebenoracreations.com/contact</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- 14. GitHub Pages Primary Fallback Canonical URL -->
+  <url>
+    <loc>https://ebenoracreations-creator.github.io/EBENORA/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ebenoracreations-creator.github.io/EBENORA/images/hero.png</image:loc>
+      <image:title>Ebenora Creations 3D Hero - Best Designing Studio</image:title>
+    </image:image>
+  </url>
+
 </urlset>

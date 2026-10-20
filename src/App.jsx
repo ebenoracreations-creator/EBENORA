@@ -13,6 +13,8 @@ import PortfolioPage from './pages/PortfolioPage';
 import PackagesPage from './pages/PackagesPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
+import AdminDashboardPage from './pages/AdminDashboardPage';
+import WorkCardGeneratorPage from './pages/WorkCardGeneratorPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -47,6 +49,8 @@ export default function App() {
           <Route path="/packages" element={<PackagesPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/admin" element={<AdminDashboardPage />} />
+          <Route path="/work-card" element={<WorkCardGeneratorPage />} />
         </Routes>
       </main>
     </div>

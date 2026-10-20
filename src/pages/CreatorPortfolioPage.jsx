@@ -133,12 +133,21 @@ export function CreatorPortfolioPage() {
             </a>
           </div>
 
-          <button
-            onClick={() => setIsContactOpen(true)}
-            className="hover:text-white transition-colors cursor-pointer border-b border-[#D7E2EA]/40 pb-0.5"
-          >
-            Talk to Ebenora →
-          </button>
+          <div className="flex items-center gap-4">
+            <a
+              href="#/admin"
+              className="hover:text-cyan-400 transition-colors lowercase tracking-normal text-[11px] opacity-60 hover:opacity-100"
+              title="Ebenora Executive Admin Panel"
+            >
+              🔒 admin
+            </a>
+            <button
+              onClick={() => setIsContactOpen(true)}
+              className="hover:text-white transition-colors cursor-pointer border-b border-[#D7E2EA]/40 pb-0.5"
+            >
+              Talk to Ebenora →
+            </button>
+          </div>
         </div>
       </footer>
     </div>

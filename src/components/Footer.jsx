@@ -97,6 +97,7 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <Link to="/contact" className="hover:text-[#D9B15F]">Privacy Policy</Link>
             <Link to="/contact" className="hover:text-[#D9B15F]">Terms & Conditions</Link>
+            <Link to="/admin" className="hover:text-cyan-400 text-[#718290]">🔒 Admin</Link>
             
             <button 
               onClick={scrollToTop}

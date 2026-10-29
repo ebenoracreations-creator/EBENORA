@@ -51,7 +51,7 @@ export default function RoiCalculator({ onOpenQuote }) {
   };
 
   const generateWhatsAppMessage = () => {
-    const text = `Hi AuraCraft Team! I just used your Interactive Calculator on your website. 
+    const text = `Hi Ebenora Creations Team! I just used your Interactive Calculator on your website. 
 Here are my project details:
 • Type: ${getSiteTypeName()}
 • Pages: ${pageCount}
@@ -62,7 +62,7 @@ Here are my project details:
 • Est. Delivery: ${timelineDays} Days
 
 Can we discuss starting my project?`;
-    return `https://wa.me/18005552872?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/918304085739?text=${encodeURIComponent(text)}`;
   };
 
   return (

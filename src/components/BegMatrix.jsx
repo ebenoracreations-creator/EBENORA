@@ -27,7 +27,7 @@ export default function BegMatrix({ onOpenQuote }) {
     {
       icon: HeartHandshake,
       title: "Ongoing Monthly Creative Team",
-      desc: "Optionally hire AuraCraft month-to-month for continuous graphic design, video editing, motion graphics, and web updates.",
+      desc: "Optionally hire Ebenora Creations month-to-month for continuous graphic design, video editing, motion graphics, and web updates.",
       badge: "Full Partnership",
       badgeClass: "badge-pill"
     },

@@ -19,7 +19,7 @@ export default function LeadEngineForm() {
   };
 
   const generateWhatsAppLink = () => {
-    const text = `Hi AuraCraft Team! I'm submitting a project inquiry:
+    const text = `Hi Ebenora Creations Team! I'm submitting a project inquiry:
 • Name: ${formData.name || 'Interested Client'}
 • Phone/Email: ${formData.phone || formData.email || 'Provided'}
 • Primary Need: ${formData.projectType}
@@ -27,7 +27,7 @@ export default function LeadEngineForm() {
 • Details: ${formData.message || 'Custom creative project'}
 
 Can we discuss next steps?`;
-    return `https://wa.me/18005552872?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/918304085739?text=${encodeURIComponent(text)}`;
   };
 
   return (

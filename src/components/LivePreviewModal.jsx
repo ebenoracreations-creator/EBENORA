@@ -8,8 +8,8 @@ export default function LivePreviewModal({ project, onClose, onOpenQuote }) {
 
   if (!project) return null;
 
-  const whatsappMessage = encodeURIComponent(`Hi! I'm testing the live demo for "${project.title}" on the AuraCraft website and I want a custom site built for my business!`);
-  const whatsappUrl = `https://wa.me/18005552872?text=${whatsappMessage}`;
+  const whatsappMessage = encodeURIComponent(`Hi! I'm testing the live demo for "${project.title}" on the Ebenora Creations website and I want a custom site built for my business!`);
+  const whatsappUrl = `https://wa.me/918304085739?text=${whatsappMessage}`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-fadeIn">
@@ -29,7 +29,7 @@ export default function LivePreviewModal({ project, onClose, onOpenQuote }) {
             
             <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded bg-white border-2 border-black text-xs font-mono font-bold text-black">
               <Globe className="w-3.5 h-3.5 text-black" />
-              <span>demo.{project.id}.auracraft.design</span>
+              <span>demo.{project.id}.ebenoracreations.com</span>
             </div>
           </div>
 

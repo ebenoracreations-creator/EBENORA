@@ -23,6 +23,28 @@ export default function EbenoraInvoiceDocument({ invoice, theme = 'white' }) {
     amount: -6000
   };
 
+  // Calculate Gross Original Amount and Total Discount
+  let calculatedOriginal = 0;
+  let calculatedDiscount = 0;
+
+  lineItems.forEach((item) => {
+    const amt = parseFloat(item.amount || '0') || 0;
+    if (item.type === 'discount' || amt < 0 || (item.title && item.title.toLowerCase().includes('discount'))) {
+      calculatedDiscount += Math.abs(amt);
+    } else if (item.type !== 'valuation' && !(item.title && item.title.toLowerCase().includes('total project valuation'))) {
+      calculatedOriginal += amt;
+    }
+  });
+
+  const valuationItem = lineItems.find((i) => i.type === 'valuation' || (i.title && i.title.toLowerCase().includes('total project valuation')));
+  if (valuationItem && valuationItem.amount) {
+    calculatedOriginal = parseFloat(valuationItem.amount) || calculatedOriginal;
+  }
+
+  const originalAmount = invoice.originalAmount !== undefined && invoice.originalAmount !== '' ? parseFloat(invoice.originalAmount) : calculatedOriginal;
+  const totalDiscount = invoice.discountAmount !== undefined && invoice.discountAmount !== '' ? parseFloat(invoice.discountAmount) : calculatedDiscount;
+  const finalProjectCost = invoice.finalCost !== undefined && invoice.finalCost !== '' ? parseFloat(invoice.finalCost) : Math.max(0, originalAmount - totalDiscount);
+
   return (
     <div className="w-full flex justify-center py-2">
       {/* A4 Portrait Luxury Invoice/Quote Sheet */}
@@ -267,7 +289,7 @@ export default function EbenoraInvoiceDocument({ invoice, theme = 'white' }) {
                 );
               })}
 
-              {/* HIGHLIGHTED ROW 1: FINAL PROJECT COST (Warm Gold Pill) */}
+              {/* HIGHLIGHTED ROW 1: FINAL PROJECT COST (Warm Gold Pill with Original & Discount) */}
               <div className={`grid grid-cols-12 px-4 py-2.5 border-y items-center ${
                 isWhite
                   ? 'bg-[#F8FAFC] border-[#E2E8F0]'
@@ -283,7 +305,7 @@ export default function EbenoraInvoiceDocument({ invoice, theme = 'white' }) {
                   </div>
                 </div>
 
-                <div className="col-span-6 sm:col-span-7 pr-2">
+                <div className="col-span-5 sm:col-span-6 pr-2">
                   <div className={`font-bold text-xs uppercase tracking-wider ${
                     isWhite ? 'text-[#0F172A]' : 'text-white'
                   }`}>
@@ -294,10 +316,22 @@ export default function EbenoraInvoiceDocument({ invoice, theme = 'white' }) {
                   </div>
                 </div>
 
-                <div className="col-span-5 sm:col-span-4 flex justify-end">
-                  <div className="bg-[#D9B15F] text-black font-extrabold text-sm sm:text-base font-sans tracking-tight px-4 py-1.5 rounded-lg shadow-sm flex items-center space-x-1">
+                <div className="col-span-6 sm:col-span-5 flex items-center justify-end space-x-2.5">
+                  {/* Original Amount Strikethrough & Discount Tag */}
+                  {totalDiscount > 0 && (
+                    <div className="text-right leading-tight">
+                      <div className={`text-[10px] font-mono line-through ${isWhite ? 'text-[#94A3B8]' : 'text-zinc-500'}`}>
+                        {currencySymbol} {formatAmount(originalAmount)}
+                      </div>
+                      <div className="text-[10px] font-bold text-amber-600 dark:text-amber-400">
+                        – {currencySymbol} {formatAmount(totalDiscount)} OFF
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="bg-[#D9B15F] text-black font-extrabold text-sm sm:text-base font-sans tracking-tight px-3.5 py-1.5 rounded-lg shadow-sm flex items-center space-x-1 shrink-0">
                     <span>{currencySymbol}</span>
-                    <span>{formatAmount(invoice.finalCost || 16000)}</span>
+                    <span>{formatAmount(finalProjectCost)}</span>
                   </div>
                 </div>
               </div>

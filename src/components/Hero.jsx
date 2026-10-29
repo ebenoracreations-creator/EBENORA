@@ -88,7 +88,7 @@ export default function Hero({ onOpenQuote }) {
                   <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
                 </div>
                 <span className="bg-[#08080A] text-zinc-300 px-3 py-1 rounded-full border border-white/10 font-mono text-[11px] font-bold">
-                  AURACRAFT ENGINE
+                  EBENORA ENGINE
                 </span>
               </div>
 

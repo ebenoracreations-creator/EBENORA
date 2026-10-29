@@ -80,7 +80,7 @@ export default function HardTruthSection({ onOpenQuote }) {
               <HeartHandshake className="w-4 h-4 text-purple-400" /> Ongoing Creative Partnership
             </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Hire AuraCraft as Your Dedicated Monthly Creative Team
+              Hire Ebenora Creations as Your Dedicated Monthly Creative Team
             </h3>
             <p className="text-sm text-zinc-300 max-w-xl leading-relaxed">
               Don't stress over doing everything yourself. You can hire us month-to-month to handle your <strong>ongoing website updates, graphic design, video editing, motion graphics, and SEO growth</strong> so your business never stops winning.

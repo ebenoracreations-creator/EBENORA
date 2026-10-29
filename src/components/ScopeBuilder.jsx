@@ -27,13 +27,13 @@ export default function ScopeBuilder({ onOpenQuote }) {
   };
 
   const generateWhatsAppMessage = () => {
-    const text = `Hi AuraCraft Team! I built my project scope on your website:
+    const text = `Hi Ebenora Creations Team! I built my project scope on your website:
 • Services Needed: ${getServicesListText()}
 • Timeline: ${timeline === 'express' ? 'Express (3-5 Days)' : timeline === '7-days' ? 'Standard (7 Days)' : '14+ Days'}
 • Monthly Creative Retainer Support: ${needsMonthlySupport ? 'Yes, interested in monthly support' : 'Project-based'}
 
 Can we discuss starting my custom project roadmap?`;
-    return `https://wa.me/18005552872?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/918304085739?text=${encodeURIComponent(text)}`;
   };
 
   return (

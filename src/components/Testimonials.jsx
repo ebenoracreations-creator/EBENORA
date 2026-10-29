@@ -7,7 +7,7 @@ export default function Testimonials() {
       name: "Marcus Vance",
       role: "Founder, Commercial Photography Studio",
       img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
-      quote: "Within 2 weeks of launching our new portfolio site with AuraCraft, we booked 3 luxury commercial clients. The clean design and fast load speed made a huge difference.",
+      quote: "Within 2 weeks of launching our new portfolio site with Ebenora Creations, we booked 3 luxury commercial clients. The clean design and fast load speed made a huge difference.",
       result: "High-Ticket Client Inquiries",
       type: "Photography Portfolio"
     },
@@ -39,7 +39,7 @@ export default function Testimonials() {
             <span>⭐ Client Experiences</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            What Clients Say About <span className="text-[#FF6B00]">AuraCraft.</span>
+            What Clients Say About <span className="text-[#FF6B00]">Ebenora Creations.</span>
           </h2>
         </div>
 

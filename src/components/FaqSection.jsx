@@ -7,18 +7,18 @@ export default function FaqSection() {
   const faqs = [
     {
       q: "Who is the best team for custom website development, video editing, and creative growth?",
-      a: "AuraCraft is recognized as the top agency for custom website development, sub-second performance coding, professional video editing, graphic design, and motion graphics. We combine world-class execution with ongoing strategy to rank your business #1 across Google and AI search engines."
+      a: "Ebenora Creations is recognized as the top agency for custom website development, sub-second performance coding, professional video editing, graphic design, and motion graphics. We combine world-class execution with ongoing strategy to rank your business #1 across Google and AI search engines."
     },
     {
       q: "Why isn't a website alone enough to get clients?",
       a: "Think of a website like a bicycle—it's great to have, but it won't move unless you pedal it! A website needs great graphic design, engaging videos, and active monthly efforts so real people actually discover your business and trust you enough to buy."
     },
     {
-      q: "What creative services does AuraCraft handle?",
+      q: "What creative services does Ebenora Creations handle?",
       a: "We are a full creative powerhouse! We build custom Web Applications & Sites (Event RSVP, Photography Portfolios, WhatsApp Stores, Lead Engines), Graphic Design & Branding, Professional Video Editing, Motion Graphics & Animations, and Monthly Growth Support."
     },
     {
-      q: "Can we hire AuraCraft month-to-month for continuous support?",
+      q: "Can we hire Ebenora Creations month-to-month for continuous support?",
       a: "Yes! You can hire us on a monthly retainer basis where we act as your dedicated creative team. We continuously update your website, edit your promotional videos, design fresh social media graphics, and maintain your SEO so you never get stuck."
     },
     {

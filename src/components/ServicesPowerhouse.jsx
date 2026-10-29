@@ -46,7 +46,7 @@ export default function ServicesPowerhouse({ onOpenQuote }) {
             Everything Your Business Needs to <span className="text-[#FF6B00]">Dominate Online.</span>
           </h2>
           <p className="text-zinc-400 text-lg mt-3 font-normal">
-            From coding custom websites to editing high-impact videos and designing bold graphics—AuraCraft does it all under one roof.
+            From coding custom websites to editing high-impact videos and designing bold graphics—Ebenora Creations does it all under one roof.
           </p>
         </div>
 

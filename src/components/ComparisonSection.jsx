@@ -17,7 +17,7 @@ export default function ComparisonSection({ onOpenQuote }) {
             <span>Why 90% of Websites Fail & How We Win</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Standard Website vs. <span className="gradient-text-cyan">AuraCraft Masterpiece</span>
+            Standard Website vs. <span className="gradient-text-cyan">Ebenora Masterpiece</span>
           </h2>
           <p className="text-slate-300 text-lg mt-3">
             Most agencies sell bloated, slow templates that confuse visitors. Here is why our bespoke architecture drives 3.4x more paying clients.
@@ -70,10 +70,10 @@ export default function ComparisonSection({ onOpenQuote }) {
             </div>
           </div>
 
-          {/* Right Card: AuraCraft High-Converting Masterpiece */}
+          {/* Right Card: Ebenora Creations High-Converting Masterpiece */}
           <div className="glass-panel p-8 rounded-3xl border border-[#00f2fe]/40 bg-gradient-to-b from-slate-900 via-slate-950 to-[#00f2fe]/10 relative shadow-[0_0_50px_rgba(0,242,254,0.2)]">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f2fe]/10 border border-[#00f2fe]/40 text-[#00f2fe] text-xs font-bold uppercase tracking-wider mb-6">
-              <Sparkles className="w-3.5 h-3.5" /> AuraCraft Conversion Engine
+              <Sparkles className="w-3.5 h-3.5" /> Ebenora Conversion Engine
             </div>
 
             <h3 className="text-2xl font-extrabold text-white mb-6 flex items-center justify-between">
@@ -122,7 +122,7 @@ export default function ComparisonSection({ onOpenQuote }) {
                 onClick={onOpenQuote}
                 className="btn-primary w-full py-4 text-sm font-bold justify-center rounded-xl"
               >
-                <span>Upgrade to an AuraCraft Website</span>
+                <span>Upgrade to an Ebenora Website</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

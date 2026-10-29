@@ -5,6 +5,7 @@ import {
   importWorksFromJSON,
   getWorkStatistics
 } from '../../utils/workDatabase';
+import { exportAllInvoicesLedgerToExcel } from '../../utils/excelExporter';
 import {
   X,
   Search,
@@ -17,7 +18,8 @@ import {
   Printer,
   FileCheck,
   Layers,
-  Sparkles
+  Sparkles,
+  FileSpreadsheet
 } from 'lucide-react';
 
 export default function WorkArchiveModal({
@@ -100,6 +102,16 @@ export default function WorkArchiveModal({
           </div>
 
           <div className="flex items-center space-x-2">
+            {/* Export Master Excel Ledger */}
+            <button
+              onClick={() => exportAllInvoicesLedgerToExcel(works)}
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-xs font-semibold text-emerald-300 transition-all shadow-sm"
+              title="Download Master Accounting Ledger (.xlsx) of all invoices & works"
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="hidden sm:inline">Excel Ledger (.xlsx)</span>
+            </button>
+
             {/* Export JSON */}
             <button
               onClick={() => exportWorksToJSON(works)}

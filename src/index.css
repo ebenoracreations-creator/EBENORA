@@ -101,8 +101,8 @@ body {
   }
 
   body {
-    background: #080808 !important;
-    color: #E5E7EB !important;
+    background: transparent !important;
+    color: inherit !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
@@ -145,7 +145,6 @@ body {
     max-width: 100% !important;
     margin: 0 auto !important;
     padding: 24px 28px !important;
-    background-color: #070707 !important;
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
@@ -153,6 +152,16 @@ body {
     break-inside: avoid !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+
+  #ebenora-invoice-sheet[data-theme="white"] {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+  }
+
+  #ebenora-invoice-sheet[data-theme="dark"] {
+    background-color: #070707 !important;
+    color: #E5E7EB !important;
   }
 
   /* Hide screen-only UI controls */

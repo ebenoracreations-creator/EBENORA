@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { WORK_CATEGORIES, getNextInvoiceNumber } from '../../utils/workDatabase';
+import { exportInvoiceToExcel } from '../../utils/excelExporter';
 import {
   Wand2,
   RefreshCw,
@@ -13,7 +14,8 @@ import {
   Sparkles,
   Gift,
   CheckCircle,
-  FileCheck
+  FileCheck,
+  FileSpreadsheet
 } from 'lucide-react';
 
 export default function InvoiceEditor({
@@ -316,6 +318,16 @@ export default function InvoiceEditor({
               Quotation
             </button>
           </div>
+
+          <button
+            type="button"
+            onClick={() => exportInvoiceToExcel(invoice)}
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-300 text-xs font-semibold transition-all shadow-sm"
+            title="Download Excel Sheet (.xlsx) for this invoice"
+          >
+            <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-400" />
+            <span className="hidden sm:inline">Export Excel</span>
+          </button>
 
           <button
             onClick={() => setIsQuickPasteOpen(!isQuickPasteOpen)}

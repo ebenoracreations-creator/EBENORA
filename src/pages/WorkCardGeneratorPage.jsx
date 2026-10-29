@@ -8,6 +8,7 @@ import {
   getNextInvoiceNumber,
   WORK_CATEGORIES
 } from '../utils/workDatabase';
+import { exportInvoiceToExcel } from '../utils/excelExporter';
 import EbenoraWorkCard from '../components/workcard/EbenoraWorkCard';
 import WorkCardEditor from '../components/workcard/WorkCardEditor';
 import EbenoraInvoiceDocument from '../components/workcard/EbenoraInvoiceDocument';
@@ -29,6 +30,7 @@ export default function WorkCardGeneratorPage() {
   const [works, setWorks] = useState(() => getStoredWorks());
   // Template format: 'invoice' (Official Sample Layout) or 'card' (Delivery Card Layout)
   const [docFormat, setDocFormat] = useState('invoice');
+  const [invoiceTheme, setInvoiceTheme] = useState('white'); // 'white' (default) | 'dark'
   const [orientation, setOrientation] = useState('landscape'); // for card format
   const [isArchiveOpen, setIsArchiveOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('editor'); // for mobile: 'editor' | 'preview'
@@ -318,6 +320,18 @@ export default function WorkCardGeneratorPage() {
               </div>
             )}
 
+            {/* Export Excel (.xlsx) */}
+            {docFormat === 'invoice' && (
+              <button
+                onClick={() => exportInvoiceToExcel(currentInvoice)}
+                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-emerald-950/90 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-300 font-semibold text-xs transition-all shadow-sm"
+                title="Save & Export this Invoice/Quotation as an Excel Sheet (.xlsx)"
+              >
+                <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="hidden sm:inline">Export Excel</span>
+              </button>
+            )}
+
             {/* Archive Vault Button */}
             <button
               onClick={() => setIsArchiveOpen(true)}
@@ -422,6 +436,34 @@ export default function WorkCardGeneratorPage() {
               </div>
 
               <div className="flex items-center space-x-2">
+                {/* Theme Selector for Invoice */}
+                {docFormat === 'invoice' && (
+                  <div className="flex p-0.5 bg-[#1C1C1C] rounded-lg border border-[#333333] text-xs mr-1">
+                    <button
+                      onClick={() => setInvoiceTheme('white')}
+                      className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-all ${
+                        invoiceTheme === 'white'
+                          ? 'bg-white text-black font-bold shadow'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                      title="Switch to Crisp White Executive Theme (Printer Friendly)"
+                    >
+                      ☀️ White Theme
+                    </button>
+                    <button
+                      onClick={() => setInvoiceTheme('dark')}
+                      className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-all ${
+                        invoiceTheme === 'dark'
+                          ? 'bg-[#D9B15F] text-black font-bold shadow'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                      title="Switch to Dark Obsidian Theme"
+                    >
+                      🌙 Dark Theme
+                    </button>
+                  </div>
+                )}
+
                 <button
                   onClick={handlePrint}
                   className="flex items-center space-x-1 text-xs text-[#D9B15F] hover:text-[#f1d38a] font-semibold transition-colors"
@@ -435,7 +477,7 @@ export default function WorkCardGeneratorPage() {
             {/* Rendered Document */}
             <div className="sticky top-20">
               {docFormat === 'invoice' ? (
-                <EbenoraInvoiceDocument invoice={currentInvoice} />
+                <EbenoraInvoiceDocument invoice={currentInvoice} theme={invoiceTheme} />
               ) : (
                 <EbenoraWorkCard work={currentWorkCard} orientation={orientation} />
               )}

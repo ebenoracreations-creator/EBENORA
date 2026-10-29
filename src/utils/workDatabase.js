@@ -3,51 +3,65 @@
 
 export const WORK_CATEGORIES = [
   {
+    key: 'web_development',
+    prefix: 'EC-WEB',
+    code: 'WD',
+    label: 'Website Development',
+    subtitle: 'W E B S I T E   D E V E L O P M E N T',
+    color: '#F472B6',
+    defaultDeliverables: ['Responsive High-Performance Website', 'Interactive 3D Elements', 'Global SEO & Core Vitals']
+  },
+  {
     key: 'graphic_design',
     prefix: 'EC-GD',
+    code: 'GD',
     label: 'Graphic Design',
+    subtitle: 'G R A P H I C   D E S I G N',
     color: '#D9B15F',
     defaultDeliverables: ['Luxury Brand Creative', 'Print-Ready Vector Files', 'Social Media Carousel']
   },
   {
     key: 'video_editing',
     prefix: 'EC-VE',
+    code: 'VE',
     label: 'Video Editing',
+    subtitle: 'V I D E O   E D I T I N G',
     color: '#60A5FA',
     defaultDeliverables: ['4K Cinematic Commercial', 'Vertical Reels / Shorts Cut', 'Sound Design & Color Grade']
   },
   {
     key: 'marketing',
     prefix: 'EC-MKT',
+    code: 'MKT',
     label: 'Marketing & Social Media',
+    subtitle: 'M A R K E T I N G   &   S O C I A L',
     color: '#34D399',
     defaultDeliverables: ['Social Media Content Strategy', 'Ad Creatives Suite', 'Audience Growth Campaign']
   },
   {
-    key: 'web_development',
-    prefix: 'EC-WEB',
-    label: 'Web Development & 3D',
-    color: '#F472B6',
-    defaultDeliverables: ['Responsive High-Performance Website', 'Interactive 3D Elements', 'Global SEO & Core Vitals']
-  },
-  {
     key: 'branding',
     prefix: 'EC-BR',
+    code: 'BR',
     label: 'Luxury Branding',
+    subtitle: 'L U X U R Y   B R A N D I N G',
     color: '#FBBF24',
     defaultDeliverables: ['Primary & Secondary Logo Suites', 'Brand Guidelines Book (PDF)', 'Typography & Color Palette']
   },
   {
     key: 'invitations',
     prefix: 'EC-INV',
+    code: 'INV',
     label: 'Digital Invitations',
+    subtitle: 'D I G I T A L   I N V I T A T I O N',
     color: '#A78BFA',
     defaultDeliverables: ['Interactive Event Invitation Website', 'RSVP Tracking Form', 'Event Timeline & Navigation Map']
   },
   {
     key: 'custom_solutions',
     prefix: 'EC-CS',
+    code: 'CS',
     label: 'Custom Solutions',
+    subtitle: 'C U S T O M   S O L U T I O N S',
     color: '#38BDF8',
     defaultDeliverables: ['Custom Web Architecture', 'API Integrations & Automation', 'Technical Documentation']
   }
@@ -57,6 +71,105 @@ export const STORAGE_KEY_WORKS = 'ebenora_work_records_v1';
 
 // Seed projects from Ebenora's existing portfolio so the database starts rich
 export const INITIAL_SEED_WORKS = [
+  {
+    id: 'EC/WD/2026/016',
+    invoiceNo: 'EC/WD/2026/016',
+    docType: 'INVOICE',
+    category: 'web_development',
+    categoryCode: 'WD',
+    subtitle: 'W E B S I T E   D E V E L O P M E N T',
+    title: 'Website Development',
+    projectType: 'Business Website',
+    projectStatus: 'Ready to launch',
+    clientName: 'Brownlights Media',
+    clientCompany: 'BROWNLIGHTS MEDIA',
+    clientLocation: 'Kozhikode Kerala',
+    dateCreated: '15 Oct 2026',
+    dueDate: '—',
+    currency: '₹',
+    contact: {
+      email: 'ebenoracretion@gmail.com',
+      phone: '9037352739',
+      website: 'www.ebenoracreations.com',
+      location: 'Kerala, India'
+    },
+    lineItems: [
+      {
+        id: 1,
+        no: 1,
+        title: 'Original Quotation',
+        subtitle: '(Initial discussion and proposed cost)',
+        amount: 12000,
+        type: 'charge'
+      },
+      {
+        id: 2,
+        no: 2,
+        title: 'Revised Development Cost',
+        subtitle: '(First two website versions failed – design and functionality issues)',
+        amount: 15000,
+        type: 'charge'
+      },
+      {
+        id: 3,
+        no: 3,
+        title: 'Additional Page',
+        subtitle: '(As per client’s request)',
+        amount: 2500,
+        type: 'charge'
+      },
+      {
+        id: 4,
+        no: 4,
+        title: 'Total Project Valuation',
+        subtitle: '(Original quote + revised cost + additional page)',
+        amount: 17500,
+        type: 'valuation'
+      },
+      {
+        id: 5,
+        no: 5,
+        title: 'Special Discount',
+        subtitle: '(Token of appreciation)',
+        amount: -1500,
+        type: 'discount'
+      }
+    ],
+    finalCost: 16000,
+    advancePaidItem: {
+      no: 6,
+      title: 'Advance Already Paid',
+      subtitle: '(Received from client)',
+      amount: -6000
+    },
+    balanceDue: 10000,
+    specialOffer: {
+      enabled: true,
+      title: 'SPECIAL OFFER — A TOKEN OF APPRECIATION',
+      description: 'As a token of appreciation, we are providing you with a 3-Month SEO Support Plan (worth ₹3,000) completely free.'
+    },
+    deliverables: [
+      'Original Quotation (₹12,000)',
+      'Revised Development Architecture (₹15,000)',
+      'Additional Custom Page (₹2,500)',
+      'Special Appreciation Discount (-₹1,500)',
+      '3-Month Free SEO Support Plan'
+    ],
+    specs: {
+      resolution: 'Desktop & Mobile Viewports',
+      format: 'Modern Web Stack',
+      turnaround: 'Ready to launch'
+    },
+    financials: {
+      currency: '₹',
+      totalAmount: '16000',
+      advancePaid: '6000',
+      balanceDue: '10000',
+      paymentStatus: 'Advance Received'
+    },
+    notes: 'Official invoice for Brownlights Media website development project.',
+    qrPayload: 'https://ebenoracreations.com/'
+  },
   {
     id: 'EC-WEB-001',
     category: 'web_development',
@@ -254,6 +367,34 @@ export function getNextWorkId(categoryKey, worksList = null) {
   const nextNum = maxNum + 1;
   const padded = String(nextNum).padStart(3, '0');
   return `${prefix}-${padded}`;
+}
+
+// Auto-Increment Official Invoice / Quotation Number (e.g. EC/WD/2026/016 or EC-QT/WD/2026/016)
+export function getNextInvoiceNumber(categoryKey, docType = 'INVOICE', worksList = null) {
+  const category = WORK_CATEGORIES.find((c) => c.key === categoryKey) || WORK_CATEGORIES[0];
+  const code = category.code || 'WD';
+  const year = new Date().getFullYear();
+  const prefix = docType === 'QUOTATION' ? `EC-QT/${code}/${year}/` : `EC/${code}/${year}/`;
+  const works = worksList || getStoredWorks();
+
+  let maxNum = 15; // default benchmark based on sample EC/WD/2026/016
+
+  works.forEach((w) => {
+    const rawId = w.invoiceNo || w.id;
+    if (rawId && typeof rawId === 'string') {
+      const match = rawId.match(/EC(?:\-QT)?\/[A-Z]+\/\d{4}\/(\d+)/i);
+      if (match) {
+        const num = parseInt(match[1], 10);
+        if (!isNaN(num) && num > maxNum) {
+          maxNum = num;
+        }
+      }
+    }
+  });
+
+  const nextNum = maxNum + 1;
+  const padded = String(nextNum).padStart(3, '0');
+  return `${prefix}${padded}`;
 }
 
 // Helper: Insert or Update single work record

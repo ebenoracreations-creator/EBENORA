@@ -46,12 +46,12 @@ export default function EbenoraInvoiceDocument({ invoice, theme = 'white' }) {
   const finalProjectCost = invoice.finalCost !== undefined && invoice.finalCost !== '' ? parseFloat(invoice.finalCost) : Math.max(0, originalAmount - totalDiscount);
 
   return (
-    <div className="w-full flex justify-center py-2">
+    <div className="w-full flex justify-center py-2 print:py-0 print:m-0 print:w-full print:block">
       {/* A4 Portrait Luxury Invoice/Quote Sheet */}
       <div
         id="ebenora-invoice-sheet"
         data-theme={theme}
-        className={`relative w-full max-w-[794px] min-h-[1080px] p-8 sm:p-10 flex flex-col justify-between font-['Kanit',sans-serif] transition-all duration-300 print:border-none print:shadow-none print:rounded-none print:p-8 ${
+        className={`relative w-full max-w-[794px] min-h-[1080px] p-8 sm:p-10 flex flex-col justify-between font-['Kanit',sans-serif] transition-all duration-300 print:border-none print:shadow-none print:rounded-none print:p-6 print:min-h-0 print:h-auto print:max-w-full print:m-0 ${
           isWhite
             ? 'bg-[#FFFFFF] text-[#0F172A] border border-[#E2E8F0] shadow-xl rounded-2xl'
             : 'bg-[#070707] text-[#E5E7EB] border border-[#222222] shadow-2xl rounded-2xl'
@@ -64,7 +64,7 @@ export default function EbenoraInvoiceDocument({ invoice, theme = 'white' }) {
       >
         {/* Subtle Ambient Radial Glow */}
         <div
-          className={`absolute top-0 right-0 w-72 h-72 rounded-full blur-3xl pointer-events-none ${
+          className={`absolute top-0 right-0 w-72 h-72 rounded-full blur-3xl pointer-events-none no-print print:hidden ${
             isWhite ? 'bg-[#D9B15F]/10' : 'bg-[#D9B15F]/5'
           }`}
         />

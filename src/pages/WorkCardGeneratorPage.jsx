@@ -233,13 +233,16 @@ export default function WorkCardGeneratorPage() {
 
   // Trigger high-resolution media print / PDF download
   const handlePrint = () => {
-    window.print();
+    setActiveTab('preview');
+    setTimeout(() => {
+      window.print();
+    }, 150);
   };
 
   return (
     <div className="min-h-screen bg-[#080808] text-[#D7E2EA] font-['Kanit',sans-serif] pb-16">
       {/* ================= TOP STUDIO NAVIGATION ================= */}
-      <header className="sticky top-0 z-40 bg-[#0C0C0C]/90 backdrop-blur-md border-b border-[#222222] px-4 sm:px-8 py-3 no-print">
+      <header className="sticky top-0 z-40 bg-[#0C0C0C]/90 backdrop-blur-md border-b border-[#222222] px-4 sm:px-8 py-3 no-print print:hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           {/* Logo & Title */}
           <div className="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
@@ -362,7 +365,7 @@ export default function WorkCardGeneratorPage() {
       )}
 
       {/* Mobile Tab Switcher */}
-      <div className="lg:hidden flex items-center justify-center p-2 bg-[#111111] border-b border-[#222222] no-print">
+      <div className="lg:hidden flex items-center justify-center p-2 bg-[#111111] border-b border-[#222222] no-print print:hidden">
         <div className="flex p-1 bg-[#1A1A1A] rounded-xl border border-[#333333] w-full max-w-xs">
           <button
             onClick={() => setActiveTab('editor')}
@@ -386,11 +389,12 @@ export default function WorkCardGeneratorPage() {
       </div>
 
       {/* ================= MAIN SPLIT CONTENT ================= */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 print:!p-0 print:!m-0 print:!max-w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start print:!block">
           {/* Left Column: Editor Controls */}
           <div
-            className={`lg:col-span-5 space-y-6 ${
+            id="workcard-editor-column"
+            className={`lg:col-span-5 space-y-6 no-print print:hidden ${
               activeTab === 'preview' ? 'hidden lg:block' : 'block'
             }`}
           >
@@ -419,12 +423,13 @@ export default function WorkCardGeneratorPage() {
 
           {/* Right Column: Live Luxury Preview */}
           <div
-            className={`lg:col-span-7 space-y-4 ${
+            id="workcard-preview-column"
+            className={`lg:col-span-7 space-y-4 print:!block print:!w-full print:!m-0 print:!p-0 ${
               activeTab === 'editor' ? 'hidden lg:block' : 'block'
             }`}
           >
             {/* Preview Toolbar */}
-            <div className="flex items-center justify-between p-3 rounded-xl bg-[#121212] border border-[#222222] no-print">
+            <div className="flex items-center justify-between p-3 rounded-xl bg-[#121212] border border-[#222222] no-print print:hidden">
               <div className="flex items-center space-x-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-xs font-semibold text-white tracking-wide">
@@ -475,14 +480,14 @@ export default function WorkCardGeneratorPage() {
             </div>
 
             {/* Rendered Document */}
-            <div className="sticky top-20">
+            <div className="sticky top-20 print:static print:top-0 print:m-0 print:p-0">
               {docFormat === 'invoice' ? (
                 <EbenoraInvoiceDocument invoice={currentInvoice} theme={invoiceTheme} />
               ) : (
                 <EbenoraWorkCard work={currentWorkCard} orientation={orientation} />
               )}
 
-              <div className="mt-4 text-center text-xs text-zinc-500 no-print flex items-center justify-center space-x-4">
+              <div className="mt-4 text-center text-xs text-zinc-500 no-print print:hidden flex items-center justify-center space-x-4">
                 <span>Tip: Click <strong>Download PDF</strong> to export clean A4 vector PDF.</span>
                 <span>&bull;</span>
                 <span>Target: <strong className="text-white">{docFormat === 'invoice' ? (currentInvoice.clientCompany || currentInvoice.clientName) : currentWorkCard.clientName}</strong></span>

@@ -10,11 +10,11 @@ export default function EbenoraWorkCard({ work, orientation = 'landscape' }) {
   const isLandscape = orientation === 'landscape';
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center print:py-0 print:m-0 print:w-full print:block">
       {/* Printable Card Container */}
       <div
         id="ebenora-print-card"
-        className={`relative bg-[#080808] text-[#E5E7EB] border border-[#D9B15F]/60 rounded-2xl shadow-2xl overflow-hidden print:border-none print:shadow-none print:rounded-none transition-all duration-300 font-['Kanit',sans-serif] ${
+        className={`relative bg-[#080808] text-[#E5E7EB] border border-[#D9B15F]/60 rounded-2xl shadow-2xl overflow-hidden print:border-none print:shadow-none print:rounded-none print:min-h-0 print:h-auto print:max-w-full print:m-0 print:p-6 transition-all duration-300 font-['Kanit',sans-serif] ${
           isLandscape
             ? 'w-full max-w-[950px] aspect-[16/10] p-8 sm:p-10 flex flex-col justify-between'
             : 'w-full max-w-[680px] p-8 sm:p-10 flex flex-col justify-between space-y-6'

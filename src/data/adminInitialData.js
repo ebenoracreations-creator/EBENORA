@@ -12,27 +12,27 @@ export const INITIAL_ADMIN_DATA = {
       num: '01',
       name: 'Brown Lights Media',
       client: 'Brown Lights Media Kozhikode',
-      url: 'https://rohaneldhose2008.github.io/v2kozikode/',
+      url: 'https://www.brownlights.in/',
       localhostUrl: 'http://localhost:5174',
       activeUrlType: 'live',
       category: 'Creative Production & Studio',
       isInvitation: false,
-      status: 'under_creation',
-      statusNote: 'Hero 3D animations and client gallery under active development',
-      progress: 65,
-      seoStatus: 'pending',
+      status: 'completed',
+      statusNote: 'Live wedding and commercial photography platform deployed on custom domain www.brownlights.in',
+      progress: 100,
+      seoStatus: 'completed',
       seoChecklist: {
         metaTags: true,
-        sitemapSubmitted: false,
-        googleSearchConsole: false,
+        sitemapSubmitted: true,
+        googleSearchConsole: true,
         speedOptimization: true,
-        backlinks: false
+        backlinks: true
       },
       payment: {
-        status: 'advance_received',
+        status: 'fully_paid',
         totalAmount: '45000',
-        advanceAmount: '25000',
-        balanceAmount: '20000',
+        advanceAmount: '45000',
+        balanceAmount: '0',
         currency: '₹',
         lastUpdated: '2026-09-12'
       }
@@ -257,6 +257,36 @@ export const INITIAL_ADMIN_DATA = {
         balanceAmount: '0',
         currency: '₹',
         lastUpdated: '2026-08-05'
+      }
+    },
+    {
+      id: 'p10',
+      num: '10',
+      name: 'Rejoice Events & Floral Studio',
+      client: 'Rejoice Events Kottayam',
+      url: 'https://www.rejoiceeventsandflorals.com/',
+      localhostUrl: '',
+      activeUrlType: 'live',
+      category: 'Event Management & Luxury Florals',
+      isInvitation: false,
+      status: 'completed',
+      statusNote: 'Luxury event planning platform with interactive custom celebration checklist.',
+      progress: 100,
+      seoStatus: 'completed',
+      seoChecklist: {
+        metaTags: true,
+        sitemapSubmitted: true,
+        googleSearchConsole: true,
+        speedOptimization: true,
+        backlinks: true
+      },
+      payment: {
+        status: 'fully_paid',
+        totalAmount: '40000',
+        advanceAmount: '40000',
+        balanceAmount: '0',
+        currency: '₹',
+        lastUpdated: '2026-10-28'
       }
     }
   ],

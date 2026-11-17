@@ -104,10 +104,11 @@ export function CreatorPortfolioPage() {
           <li>Ebin &amp; Alana Wedding Portal (https://rohaneldhose2008.github.io/ebin-alana/)</li>
           <li>Naomika Design Studio Browser (https://rohaneldhose2008.github.io/naomikadesignstudio/)</li>
           <li>Pictura Australia (https://pictura.au/)</li>
-          <li>Brown Lights Media (https://rohaneldhose2008.github.io/v2kozikode/)</li>
+          <li>Brown Lights Media (https://www.brownlights.in/)</li>
           <li>Naomika Designs Fashion Studio (https://rohaneldhose2008.github.io/naomika_designs_studio/index.html)</li>
           <li>Baptism of David Mathuis (https://baptismofdavidmathuis.netlify.app/)</li>
           <li>Franklin &amp; Sarah Wedding Invitation (https://nexoracreation.github.io/Franklin-Sarah/)</li>
+          <li>Rejoice Events &amp; Floral Studio (https://www.rejoiceeventsandflorals.com/)</li>
         </ul>
       </section>
 

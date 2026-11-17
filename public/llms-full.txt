@@ -77,7 +77,7 @@
    - **Highlights**: Australian photography collective with smooth scroll navigation and high-fidelity photo rendering.
 
 6. **Brown Lights Media Kozhikode**
-   - **URL**: https://rohaneldhose2008.github.io/v2kozikode/
+   - **URL**: https://www.brownlights.in/
    - **Type**: Wedding Photography & Film Studio
    - **Highlights**: Cinematic media stripes, portfolio categories, luxury film highlights.
 
@@ -95,6 +95,11 @@
    - **URL**: https://nexoracreation.github.io/Franklin-Sarah/
    - **Type**: Digital Wedding Celebration
    - **Highlights**: Modern wedding portal with couple memories and event directions.
+
+10. **Rejoice Events & Floral Studio**
+   - **URL**: https://www.rejoiceeventsandflorals.com/
+   - **Type**: Luxury Event Management & Floral Styling
+   - **Highlights**: Interactive event planning checklists, mandap and church floral installations, luxury botanical styling.
 
 ---
 

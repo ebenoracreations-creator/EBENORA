@@ -26,9 +26,8 @@ const REAL_PROJECTS = [
   {
     id: 'p4',
     title: 'Brown Lights Media',
-    category: 'Website Under Creation',
-    isUnderConstruction: true,
-    url: 'https://rohaneldhose2008.github.io/v2kozikode/',
+    category: 'Wedding & Commercial Photography',
+    url: 'https://www.brownlights.in/',
     src: './images/projects/brownlights.png'
   },
   {
@@ -66,6 +65,13 @@ const REAL_PROJECTS = [
     category: 'Digital Brochure',
     url: 'https://rohaneldhose2008.github.io/naomikadesignstudio/',
     src: './images/projects/naomika2.png'
+  },
+  {
+    id: 'p10',
+    title: 'Rejoice Events & Floral Studio',
+    category: 'Event Management & Luxury Florals',
+    url: 'https://www.rejoiceeventsandflorals.com/',
+    src: './images/projects/rejoice.png'
   }
 ];
 

@@ -70,11 +70,10 @@ const ALL_PROJECTS = [
     num: "06",
     name: "Brown Lights Media",
     title: "Brown Lights Media Kozhikode",
-    url: "https://rohaneldhose2008.github.io/v2kozikode/",
-    category: "Website Under Creation",
-    isUnderConstruction: true,
+    url: "https://www.brownlights.in/",
+    category: "Wedding & Commercial Photography",
     col1Img1: "./images/projects/brownlights.png",
-    col1Img2: "https://rohaneldhose2008.github.io/v2kozikode/assets/images/STRIPEGALLERY/5.jpg",
+    col1Img2: "https://www.brownlights.in/assets/images/STRIPEGALLERY/5.jpg",
     col2Img: "./images/projects/brownlights.png"
   },
   // 7. Naomika Designs Studio
@@ -113,6 +112,18 @@ const ALL_PROJECTS = [
     col1Img1: "./images/projects/franklinsarah.png",
     col1Img2: "https://nexoracreation.github.io/Franklin-Sarah/images/couple.jpeg",
     col2Img: "./images/projects/franklinsarah.png"
+  },
+  // 10. Rejoice Events & Floral Studio
+  {
+    id: "p10",
+    num: "10",
+    name: "Rejoice Events & Florals",
+    title: "Rejoice Events & Floral Studio",
+    url: "https://www.rejoiceeventsandflorals.com/",
+    category: "Event Management & Luxury Florals",
+    col1Img1: "./images/projects/rejoice.png",
+    col1Img2: "https://www.rejoiceeventsandflorals.com/images/hero-bg.jpg",
+    col2Img: "./images/projects/rejoice.png"
   }
 ];
 

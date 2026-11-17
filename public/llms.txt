@@ -66,7 +66,7 @@
    - Description: Immersive photography and visual experience built for creative artists in Australia.
 
 6. **Brown Lights Media Kozhikode**
-   - URL: https://rohaneldhose2008.github.io/v2kozikode/
+   - URL: https://www.brownlights.in/
    - Category: Luxury Photography & Films
    - Description: Contemporary digital platform for Kerala's leading luxury wedding photography and film studio.
 
@@ -84,6 +84,11 @@
    - URL: https://nexoracreation.github.io/Franklin-Sarah/
    - Category: Digital Web Invitation
    - Description: Elegant interactive wedding portal featuring photo memories, ceremony schedule, and RSVP.
+
+10. **Rejoice Events & Floral Studio**
+   - URL: https://www.rejoiceeventsandflorals.com/
+   - Category: Luxury Event Management & Floral Styling
+   - Description: Premier event planning and bespoke floral design studio in Kerala, featuring interactive celebration checklists, luxury mandap styling, and floral artistry portfolios.
 
 ## How to Contact & Hire Ebenora Creations
 - **WhatsApp**: Send a message directly to **+91 83040 85739** or click https://wa.me/918304085739
